@@ -1,0 +1,5721 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 표지</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-image: 
+                radial-gradient(#e2e8f0 1px, transparent 1px),
+                radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.4;
+        }
+        .accent-shape-1 {
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background-color: #1a365d; /* Navy */
+            border-radius: 50%;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        .accent-shape-2 {
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 300px;
+            height: 300px;
+            background-color: #38b2ac; /* Mint */
+            border-radius: 50%;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        .content-wrapper {
+            z-index: 10;
+            text-align: center;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        .main-title {
+            color: #1a365d;
+            font-size: 4.5rem;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+        }
+        .sub-title {
+            color: #4a5568;
+            font-size: 1.75rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid #38b2ac;
+            padding-bottom: 1rem;
+            display: inline-block;
+        }
+        .info-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #e2e8f0;
+            border-left: 5px solid #1a365d;
+            padding: 1.5rem 3rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-top: 1rem;
+        }
+        .info-text {
+            color: #2d3748;
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+        .message-banner {
+            margin-top: 3rem;
+            background-color: #1a365d;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 2rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(26, 54, 93, 0.3);
+        }
+        .decorative-line {
+            width: 80px;
+            height: 6px;
+            background-color: #38b2ac;
+            margin: 0 auto 1.5rem auto;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Background Elements -->
+<div class="bg-pattern"></div>
+<div class="accent-shape-1"></div>
+<div class="accent-shape-2"></div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Title Section -->
+<div>
+<p class="text-mint-600 font-bold tracking-widest uppercase mb-4" style="color: #38b2ac;">Data Literacy Course</p>
+<h1 class="main-title">제1강 데이터</h1>
+<div class="decorative-line"></div>
+<h2 class="sub-title">데이터의 개념과 의사결정,<br/>그리고 고용노동부 데이터 이슈</h2>
+</div>
+<!-- Instructor Info -->
+<div class="info-box">
+<p class="info-text">
+<span class="font-bold mr-2"><i class="fas fa-chalkboard-teacher mr-2 text-blue-800"></i>강사:</span> [성명]  |  
+                    <span class="font-bold mr-2"><i class="fas fa-building mr-2 text-blue-800"></i>소속:</span> [부서/기관]  |  
+                    <span class="font-bold mr-2"><i class="far fa-calendar-alt mr-2 text-blue-800"></i>일자:</span> 2026.02.18
+                </p>
+</div>
+<!-- Key Message -->
+<div class="message-banner">
+<p><i class="fas fa-quote-left mr-2 opacity-50"></i> 데이터로 시작해 의사결정으로 완성하기 <i class="fas fa-quote-right ml-2 opacity-50"></i></p>
+</div>
+</div>
+<!-- Footer Logo Area (Optional) -->
+<div class="absolute bottom-6 right-8 opacity-50">
+<!-- Placeholder for Logo -->
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-gray-400 rounded-full"></div>
+<p class="text-gray-500 font-bold text-sm">Ministry of Employment and Labor</p>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>반갑습니다. 오늘 '데이터'를 주제로 첫 번째 강의를 시작하게 된 [강사명]입니다.</li>
+<li>이번 시간은 데이터란 무엇인지 기본 개념부터 시작해서, 우리가 업무에서 데이터를 어떻게 활용해야 하는지, 즉 '데이터 기반 의사결정'에 대해 이야기해보려 합니다.</li>
+<li>그리고 우리 조직인 고용노동부의 데이터 현황과 우리가 직면한 문제점들도 함께 짚어보겠습니다.</li>
+<li>비전공자분들도 쉽게 이해할 수 있도록 준비했으니 편안하게 들어주시기 바랍니다.</li>
+<li>핵심 메시지는 "데이터로 시작해 의사결정으로 완성하기"입니다. 단순히 데이터를 쌓아두는 것이 아니라, 그것이 우리의 판단과 행동으로 이어질 때 진정한 가치가 있다는 점을 기억해주시면 좋겠습니다.</li>
+</ul>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 학습목표</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-accent-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 24px;
+            background-color: #1a365d; /* Navy */
+            z-index: 10;
+        }
+        .header-area {
+            padding: 3rem 4rem 1rem 5rem;
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .main-title {
+            color: #1a365d;
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        .sub-text {
+            color: #718096;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .content-area {
+            flex: 1;
+            padding: 0 4rem 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .agenda-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            width: 100%;
+            height: 100%;
+        }
+        .agenda-item {
+            background-color: #fff;
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            align-items: flex-start;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+        .agenda-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background-color: #38b2ac; /* Mint */
+            transition: width 0.3s;
+        }
+        .agenda-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .agenda-item:hover::before {
+            width: 12px;
+        }
+        .icon-circle {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: #ebf8ff;
+            color: #2c5282;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+        .text-content {
+            flex: 1;
+        }
+        .item-title {
+            color: #2d3748;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+        .item-desc {
+            color: #718096;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        .number-watermark {
+            position: absolute;
+            right: 1rem;
+            bottom: -1rem;
+            font-size: 6rem;
+            font-weight: 900;
+            color: #f7fafc;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Side Accent Bar -->
+<div class="bg-accent-bar"></div>
+<!-- Header -->
+<header class="header-area">
+<div>
+<p class="text-mint-600 font-bold uppercase tracking-wider mb-1" style="color: #38b2ac;">Agenda</p>
+<h1 class="main-title">오늘의 학습목표</h1>
+</div>
+<div class="sub-text">
+<p>제1강 데이터 | 개념과 의사결정</p>
+</div>
+</header>
+<!-- Content -->
+<div class="content-area">
+<div class="agenda-list">
+<!-- Item 1 -->
+<div class="agenda-item">
+<div class="icon-circle">
+<i class="fas fa-layer-group"></i>
+</div>
+<div class="text-content" style="z-index: 1;">
+<p class="item-title">데이터의 의미와 위치</p>
+<p class="item-desc">데이터의 어원과 정의를 이해하고<br/>DIKW 피라미드 내 위치를 파악합니다.</p>
+</div>
+<div class="number-watermark">01</div>
+</div>
+<!-- Item 2 -->
+<div class="agenda-item">
+<div class="icon-circle">
+<i class="fas fa-filter"></i>
+</div>
+<div class="text-content" style="z-index: 1;">
+<p class="item-title">'쓸모있는 데이터'의 조건</p>
+<p class="item-desc">모든 데이터가 가치있는 것은 아닙니다.<br/>의사결정에 유용한 데이터의 특징을 알아봅니다.</p>
+</div>
+<div class="number-watermark">02</div>
+</div>
+<!-- Item 3 -->
+<div class="agenda-item">
+<div class="icon-circle">
+<i class="fas fa-chart-line"></i>
+</div>
+<div class="text-content" style="z-index: 1;">
+<p class="item-title">데이터 기반 의사결정</p>
+<p class="item-desc">직관이 아닌 데이터에 기반한 의사결정의<br/>필요성과 핵심 요소를 정리합니다.</p>
+</div>
+<div class="number-watermark">03</div>
+</div>
+<!-- Item 4 -->
+<div class="agenda-item">
+<div class="icon-circle">
+<i class="fas fa-landmark"></i>
+</div>
+<div class="text-content" style="z-index: 1;">
+<p class="item-title">고용노동부 데이터 사례</p>
+<p class="item-desc">우리 조직의 데이터 현황과 문제점을 통해<br/>현실적인 개선 과제를 인식합니다.</p>
+</div>
+<div class="number-watermark">04</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>오늘 강의의 학습목표는 크게 4가지입니다.</li>
+<li>첫째, 데이터의 기본적인 의미와 지식 체계에서의 위치를 DIKW 모델을 통해 이해합니다.</li>
+<li>둘째, 수많은 데이터 중에서 진짜 '쓸모있는 데이터'가 무엇인지 그 조건을 명확히 합니다.</li>
+<li>셋째, 데이터를 활용해 더 나은 결정을 내리는 '데이터 기반 의사결정'의 중요성을 배웁니다.</li>
+<li>마지막으로, 고용노동부의 실제 데이터 현황과 우리가 해결해야 할 과제들을 살펴보겠습니다.</li>
+<li>이 4가지 목표를 달성하면, 여러분은 데이터에 대한 새로운 시각을 갖게 될 것입니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 데이터의 의미</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .title-area::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #38b2ac; /* Mint */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #38b2ac; /* Mint accent */
+            transition: transform 0.2s;
+        }
+        .bullet-item:hover {
+            transform: translateX(5px);
+            background-color: #f7fafc;
+        }
+        .bullet-icon {
+            color: #38b2ac;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.25rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .bullet-content {
+            flex: 1;
+        }
+        .bullet-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        .bullet-desc {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #2c5282;
+            font-weight: 700;
+            background-color: #ebf8ff;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .side-visual {
+            position: absolute;
+            right: 5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 400px;
+            height: 400px;
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #cbd5e0;
+            z-index: 0;
+        }
+        .main-content {
+            width: 60%;
+            z-index: 1;
+        }
+        .latin-origin {
+            font-family: 'Noto Serif KR', serif;
+            font-style: italic;
+            color: #718096;
+        }
+        /* Visual elements for the side panel */
+        .data-visual-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            width: 320px;
+        }
+        .data-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
+        .data-icon {
+            font-size: 2rem;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+        .data-label {
+            font-size: 0.9rem;
+            color: #718096;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<p class="sub-title">Chapter 1. 데이터의 개념</p>
+<h1 class="main-title">데이터의 의미(Definition)</h1>
+</div>
+<div class="flex h-full relative">
+<!-- Main Bullet Content -->
+<div class="main-content bullet-list">
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-language"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">어원: 주어진 것(Given)</p>
+<p class="bullet-desc">
+                                라틴어 <span class="latin-origin">'Datum'</span>(주어진 것)의 복수형에서 유래했습니다.<br/>
+                                이미 존재하며 우리에게 주어진 사실들을 의미합니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-database"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">정의: 가공되지 않은 자료</p>
+<p class="bullet-desc">
+                                현실 세계에서 발생한 현상을 <span class="highlight-text">있는 그대로 기록한</span> 것입니다.<br/>
+                                아직 분석이나 해석이 더해지지 않은 원천 소스(Raw Material)입니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-shapes"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">형태: 모든 기록된 것</p>
+<p class="bullet-desc">
+                                숫자, 문자뿐만 아니라 소리, 이미지, 영상 등<br/>
+<span class="highlight-text">기록되었다면 무엇이든</span> 데이터가 될 수 있습니다.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Side Visual -->
+<div class="side-visual">
+<div class="data-visual-container">
+<div class="data-card">
+<i class="fas fa-font data-icon text-blue-500"></i>
+<p class="data-label">문자(Text)</p>
+</div>
+<div class="data-card">
+<i class="fas fa-sort-numeric-up data-icon text-green-500"></i>
+<p class="data-label">숫자(Number)</p>
+</div>
+<div class="data-card">
+<i class="fas fa-image data-icon text-purple-500"></i>
+<p class="data-label">이미지(Image)</p>
+</div>
+<div class="data-card">
+<i class="fas fa-wave-square data-icon text-red-500"></i>
+<p class="data-label">소리(Sound)</p>
+</div>
+</div>
+<div class="absolute -bottom-8 text-center w-full">
+<p class="text-gray-500 text-sm font-medium">현실의 다양한 기록 형태</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>데이터라는 말은 너무 흔하게 쓰이지만, 정작 그 뜻을 물어보면 대답하기 어려울 때가 있습니다.</li>
+<li>어원부터 살펴보면, 라틴어 'Datum'(주어진 것)의 복수형입니다. 즉, 우리가 만들었다기보다 세상에 이미 주어져 있는 사실들을 말합니다.</li>
+<li>보통은 '현실 세계의 현상을 기록한 가공되지 않은 자료'라고 정의합니다.</li>
+<li>여기서 중요한 건 '가공되지 않았다'는 점입니다. 아직 요리되지 않은 식재료와 같죠.</li>
+<li>형태는 다양합니다. 엑셀의 숫자뿐만 아니라, 보고서의 글자, 현장 사진, 녹음 파일 등 기록된 모든 것이 데이터입니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - DIKW 피라미드</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 2rem 4rem 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title-area {
+            width: 100%;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.25rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        
+        /* Pyramid Container */
+        .pyramid-container {
+            position: relative;
+            width: 800px;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Pyramid Layers */
+        .layer {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .layer-content {
+            z-index: 2;
+        }
+        
+        .layer-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .layer-desc {
+            font-size: 0.9rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        /* Triangle Shapes using Clip Path */
+        .triangle-shape {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 350px solid transparent;
+            border-right: 350px solid transparent;
+            border-bottom: 400px solid #e2e8f0; /* Base color */
+            z-index: 0;
+        }
+        
+        /* Individual Layers via CSS shapes/positioning */
+        .layer-4 { /* Wisdom */
+            bottom: 300px;
+            width: 180px;
+            height: 100px;
+            background-color: #1a365d; /* Deep Navy */
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            z-index: 4;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 15px;
+        }
+        
+        .layer-3 { /* Knowledge */
+            bottom: 200px;
+            width: 350px;
+            height: 100px;
+            background-color: #2c5282; /* Medium Navy */
+            clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+            z-index: 3;
+        }
+        
+        .layer-2 { /* Information */
+            bottom: 100px;
+            width: 525px;
+            height: 100px;
+            background-color: #3182ce; /* Blue */
+            clip-path: polygon(17% 0%, 83% 0%, 100% 100%, 0% 100%);
+            z-index: 2;
+        }
+        
+        .layer-1 { /* Data */
+            bottom: 0;
+            width: 700px;
+            height: 100px;
+            background-color: #38b2ac; /* Mint */
+            clip-path: polygon(12.5% 0%, 87.5% 0%, 100% 100%, 0% 100%);
+            z-index: 1;
+        }
+
+        /* Labels & Connections */
+        .side-label {
+            position: absolute;
+            right: -180px;
+            width: 150px;
+            text-align: left;
+            font-size: 0.9rem;
+            color: #4a5568;
+            border-left: 3px solid #cbd5e0;
+            padding-left: 10px;
+        }
+        
+        .label-wisdom { top: 40px; }
+        .label-knowledge { top: 130px; }
+        .label-info { top: 230px; }
+        .label-data { top: 330px; }
+
+        /* Caption Box */
+        .caption-box {
+            background-color: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 5px solid #1a365d;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        
+        .caption-icon {
+            font-size: 2rem;
+            color: #1a365d;
+            margin-right: 1.5rem;
+        }
+        
+        .caption-text {
+            font-size: 1.1rem;
+            color: #2d3748;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+        
+        .arrow-up {
+            position: absolute;
+            left: -80px;
+            bottom: 20px;
+            height: 380px;
+            width: 4px;
+            background-color: #cbd5e0;
+        }
+        .arrow-up::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -6px;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 12px solid #cbd5e0;
+        }
+        .value-text {
+            position: absolute;
+            left: -120px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            font-weight: 700;
+            color: #718096;
+            letter-spacing: 0.1em;
+        }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">DIKW 피라미드: 데이터의 위치</h1>
+<p class="sub-title">데이터는 지식과 지혜로 나아가는 출발점입니다</p>
+</div>
+<div class="pyramid-container">
+<!-- Value Axis -->
+<div class="arrow-up"></div>
+<p class="value-text">VALUE &amp; MEANING</p>
+<!-- Layers -->
+<div class="layer layer-4">
+<div class="layer-content mb-4">
+<p class="layer-title">WISDOM</p>
+<p class="layer-desc">지혜 (판단/적용)</p>
+</div>
+</div>
+<div class="layer layer-3">
+<div class="layer-content">
+<p class="layer-title">KNOWLEDGE</p>
+<p class="layer-desc">지식 (체계화/규칙)</p>
+</div>
+</div>
+<div class="layer layer-2">
+<div class="layer-content">
+<p class="layer-title">INFORMATION</p>
+<p class="layer-desc">정보 (가공/처리)</p>
+</div>
+</div>
+<div class="layer layer-1">
+<div class="layer-content">
+<p class="layer-title">DATA</p>
+<p class="layer-desc">데이터 (사실/기록)</p>
+</div>
+</div>
+<!-- Side Descriptions -->
+<div class="side-label label-wisdom">
+<p><strong>미래 예측과 판단</strong><br/>지식을 유연하게 적용하여 올바른 결정을 내림</p>
+</div>
+<div class="side-label label-knowledge">
+<p><strong>패턴과 규칙 발견</strong><br/>정보를 분석하고 체계화하여 얻은 통찰</p>
+</div>
+<div class="side-label label-info">
+<p><strong>의미 부여</strong><br/>데이터를 목적에 맞게 가공하고 정리함</p>
+</div>
+<div class="side-label label-data">
+<p><strong>있는 그대로의 사실</strong><br/>가공되지 않은 원천 소스 (숫자, 문자 등)</p>
+</div>
+</div>
+<div class="caption-box">
+<div class="caption-icon">
+<i class="fas fa-lightbulb"></i>
+</div>
+<div class="caption-text">
+<p>"좋은 의사결정(Wisdom)은 좋은 데이터(Data)에서 시작됩니다.<br/>
+                데이터 자체는 가치가 낮을 수 있지만, 가공과 분석을 통해 가치가 기하급수적으로 상승합니다."</p>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>이 그림은 지식 경영에서 매우 유명한 'DIKW 피라미드'입니다.</li>
+<li>가장 아래에 있는 것이 바로 오늘 우리의 주제인 '데이터(Data)'입니다.</li>
+<li>데이터를 가공해서 의미를 부여하면 '정보(Information)'가 되고,</li>
+<li>정보를 분석해서 패턴을 찾아내면 '지식(Knowledge)'이 됩니다.</li>
+<li>마지막으로 지식을 상황에 맞게 유연하게 적용하면 '지혜(Wisdom)'가 됩니다.</li>
+<li>중요한 점은, 피라미드의 가장 아래인 데이터가 부실하면 그 위의 정보, 지식, 지혜도 모두 흔들린다는 것입니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 참여활동 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .activity-badge {
+            background-color: #38b2ac; /* Mint */
+            color: white;
+            font-weight: 700;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            margin-right: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(56, 178, 172, 0.4);
+        }
+        .main-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a365d;
+        }
+        
+        /* Activity Content Layout */
+        .activity-container {
+            display: flex;
+            flex: 1;
+            gap: 3rem;
+        }
+        
+        /* Left: Question Area */
+        .question-box {
+            flex: 1;
+            background-color: #ebf8ff; /* Light Blue */
+            border-radius: 1rem;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            border-left: 8px solid #3182ce;
+        }
+        
+        .question-icon {
+            font-size: 3rem;
+            color: #3182ce;
+            margin-bottom: 1.5rem;
+        }
+        
+        .question-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c5282;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+        }
+        
+        .question-sub {
+            font-size: 1.2rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        /* Right: Memo Area */
+        .memo-box {
+            flex: 1.2;
+            background-color: #fff;
+            border: 2px dashed #cbd5e0;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            position: relative;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        
+        .memo-label {
+            position: absolute;
+            top: -15px;
+            left: 30px;
+            background-color: #fff;
+            padding: 0 10px;
+            color: #718096;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        
+        .memo-lines {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-top: 1rem;
+        }
+        
+        .memo-line {
+            border-bottom: 2px solid #e2e8f0;
+            height: 40px;
+            width: 100%;
+        }
+        
+        .handwriting-hint {
+            font-family: 'Nanum Pen Script', cursive;
+            color: #a0aec0;
+            font-size: 1.8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-5deg);
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        /* Time & Instruction */
+        .instruction-bar {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f7fafc;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .timer-info {
+            display: flex;
+            align-items: center;
+            color: #e53e3e; /* Red for timer */
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .action-info {
+            color: #4a5568;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<span class="activity-badge">Activity 01</span>
+<h1 class="main-title">내가 만든 데이터는?</h1>
+</div>
+<div class="activity-container">
+<!-- Left: Question -->
+<div class="question-box">
+<div class="question-icon">
+<i class="fas fa-pen-fancy"></i>
+</div>
+<p class="question-text">오늘 하루, 당신이 '기록'한 것은 무엇인가요?</p>
+<div class="question-sub">
+<p><i class="fas fa-check-circle text-blue-500 mr-2"></i>보낸 카카오톡 메시지</p>
+<p><i class="fas fa-check-circle text-blue-500 mr-2"></i>결재 올린 문서</p>
+<p><i class="fas fa-check-circle text-blue-500 mr-2"></i>회의 중 작성한 메모</p>
+<p><i class="fas fa-check-circle text-blue-500 mr-2"></i>점심 식사 결제 영수증</p>
+</div>
+</div>
+<!-- Right: Memo -->
+<div class="memo-box">
+<span class="memo-label"><i class="fas fa-pencil-alt mr-2"></i>나의 데이터 기록하기</span>
+<div class="handwriting-hint">여기에 적어보세요!</div>
+<div class="memo-lines">
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+</div>
+</div>
+</div>
+<div class="instruction-bar">
+<div class="timer-info">
+<i class="fas fa-stopwatch mr-2"></i> 소요시간: 2분
+            </div>
+<div class="action-info">
+<i class="fas fa-comment-dots mr-2"></i> 1~2가지를 적고 옆 사람과 짧게 공유해주세요.
+            </div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>잠시 워밍업을 해보겠습니다. '데이터'라고 하면 뭔가 거창한 엑셀 파일이나 통계 수치를 떠올리기 쉽습니다.</li>
+<li>하지만 앞서 말씀드린 대로 기록된 모든 것은 데이터입니다.</li>
+<li>오늘 아침부터 지금까지, 여러분이 남긴 흔적을 생각해보세요.</li>
+<li>출근길에 찍은 교통카드 기록, 동료에게 보낸 메신저, 점심 메뉴를 고르기 위해 검색한 기록... 이 모든 것이 데이터입니다.</li>
+<li>1분 정도 시간을 드릴 테니, 사소한 것이라도 좋으니 1~2가지씩 적어보시고 옆 분과 이야기 나눠보세요.</li>
+<li>(활동 후) 네, 좋습니다. 우리가 의식하지 못하는 사이 우리는 수많은 데이터를 생산하고 있다는 사실을 알 수 있죠?</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 쓸모있는 데이터란?</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .title-area::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #38b2ac; /* Mint */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 60%;
+            z-index: 1;
+        }
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #38b2ac; /* Mint accent */
+            transition: transform 0.2s;
+        }
+        .bullet-item:hover {
+            transform: translateX(5px);
+            background-color: #f7fafc;
+        }
+        .bullet-icon {
+            color: #38b2ac;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.25rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .bullet-content {
+            flex: 1;
+        }
+        .bullet-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        .bullet-desc {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #2c5282;
+            font-weight: 700;
+            background-color: #ebf8ff;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .side-visual {
+            position: absolute;
+            right: 5rem;
+            top: 55%;
+            transform: translateY(-50%);
+            width: 400px;
+            height: 400px;
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #cbd5e0;
+            z-index: 0;
+        }
+        .impact-icon {
+            font-size: 4rem;
+            color: #38b2ac;
+            margin-bottom: 1.5rem;
+        }
+        .impact-text {
+            text-align: center;
+            color: #2d3748;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .arrow-down {
+            color: #cbd5e0;
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<p class="sub-title">Chapter 2. 쓸모있는 데이터란?</p>
+<h1 class="main-title">쓸모있는 데이터의 조건</h1>
+</div>
+<div class="flex h-full relative">
+<!-- Main Bullet Content -->
+<div class="bullet-list">
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-exclamation-circle"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">기록되었다고 다 쓸모 있는 것은 아니다</p>
+<p class="bullet-desc">
+                                세상에는 무한한 데이터가 존재하지만, <span class="highlight-text">가치를 창출하지 못하는 데이터</span>는 단순히 저장 공간만 차지하는 비용일 수 있습니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-hand-holding-heart"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">삶과 업무를 긍정적으로 변화시키는가?</p>
+<p class="bullet-desc">
+                                데이터 자체가 목적이 되어서는 안 됩니다.<br/>
+                                우리의 문제를 해결하고, <span class="highlight-text">더 나은 방향으로 개선</span>하는 데 기여해야 합니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-lightbulb"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">핵심은 '의사결정'에의 기여</p>
+<p class="bullet-desc">
+                                결국 쓸모있는 데이터란,<br/>
+                                우리가 <span class="highlight-text">올바른 판단을 내리는 데 도움을 주는 데이터</span>입니다.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Side Visual -->
+<div class="side-visual">
+<div class="text-center p-6">
+<i class="fas fa-database text-gray-400 text-5xl mb-4"></i>
+<p class="text-gray-500 font-medium mb-2">단순한 데이터</p>
+<i class="fas fa-arrow-down text-gray-300 text-2xl my-2"></i>
+<div class="bg-white p-4 rounded-lg shadow-md border-l-4 border-mint-500 w-full mt-2" style="border-left-color: #38b2ac;">
+<i class="fas fa-check-circle text-green-500 text-3xl mb-2"></i>
+<p class="text-navy-800 font-bold text-lg" style="color: #1a365d;">의사결정</p>
+<p class="text-sm text-gray-600 mt-1">올바른 판단의 근거</p>
+</div>
+<p class="text-mint-600 font-bold mt-4 text-xl" style="color: #38b2ac;">"Value Creation"</p>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>데이터의 개념을 알았으니, 이제 '어떤 데이터가 좋은 데이터인가'를 고민해봐야 합니다.</li>
+<li>모든 데이터가 다 쓸모있는 것은 아닙니다. 단순히 쌓여만 있고 아무도 안 보는 데이터는 오히려 관리 비용만 드는 짐이 될 수 있습니다.</li>
+<li>제가 생각하는 '쓸모있는 데이터'의 정의는 간단합니다. 우리의 삶이나 업무를 긍정적인 방향으로 바꾸는 데 도움을 주는가? 입니다.</li>
+<li>예를 들어, 민원 처리를 더 빠르게 하게 해주거나, 정책의 사각지대를 발견하게 해준다면 그건 아주 쓸모있는 데이터겠죠.</li>
+<li>결국 핵심은 '의사결정'입니다. 내가 어떤 판단을 내릴 때 참고할 수 있는 데이터, 그게 진짜 데이터입니다.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 쓸모있는 데이터 3가지 특징</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 4rem;
+            display: flex;
+            flex-direction: column;
+            background-color: #f7fafc; /* Very Light Gray Background */
+        }
+        .title-area {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.25rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        
+        /* Card Container */
+        .cards-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            height: 400px;
+            padding: 0 1rem;
+        }
+        
+        /* Card Styles */
+        .feature-card {
+            flex: 1;
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 6px solid transparent;
+            position: relative;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Card Variants */
+        .card-1 { border-top-color: #e53e3e; } /* Red for Accuracy */
+        .card-2 { border-top-color: #38b2ac; } /* Mint for Usefulness */
+        .card-3 { border-top-color: #3182ce; } /* Blue for Ease of Use */
+        
+        /* Icon Styles */
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        
+        .icon-1 { background-color: #fff5f5; color: #e53e3e; }
+        .icon-2 { background-color: #e6fffa; color: #38b2ac; }
+        .icon-3 { background-color: #ebf8ff; color: #3182ce; }
+        
+        /* Text Styles */
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        
+        .card-desc {
+            font-size: 1.1rem;
+            color: #718096;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex: 1;
+        }
+        
+        .card-keywords {
+            width: 100%;
+            background-color: #f7fafc;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            color: #4a5568;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 1px dashed #cbd5e0;
+        }
+
+        /* Number Badge */
+        .number-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
+            background-color: #2d3748;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">쓸모있는 데이터: 3가지 특징</h1>
+<p class="sub-title">어떤 데이터가 우리의 삶과 업무에 긍정적인 영향을 미칠까요?</p>
+</div>
+<div class="cards-container">
+<!-- Card 1 -->
+<div class="feature-card card-1">
+<div class="number-badge">1</div>
+<div class="icon-circle icon-1">
+<i class="fas fa-bullseye"></i>
+</div>
+<p class="card-title">현실 왜곡 없음</p>
+<p class="card-desc">
+                        현실 세계의 현상을 있는 그대로 정확하게 반영해야 합니다.<br/>
+                        거짓되거나 편향된 데이터는 잘못된 판단을 유발합니다.
+                    </p>
+<div class="card-keywords">
+<p>#정확성 #대표성 #시의성</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="feature-card card-2">
+<div class="number-badge">2</div>
+<div class="icon-circle icon-2">
+<i class="fas fa-balance-scale"></i>
+</div>
+<p class="card-title">의사결정 활용 가능</p>
+<p class="card-desc">
+                        데이터를 통해 더 나은 선택을 할 수 있어야 합니다.<br/>
+                        목적과 관련 없는 데이터는 정보 과부하만 일으킵니다.
+                    </p>
+<div class="card-keywords">
+<p>#목적적합성 #KPI연계 #유의미</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="feature-card card-3">
+<div class="number-badge">3</div>
+<div class="icon-circle icon-3">
+<i class="fas fa-users-cog"></i>
+</div>
+<p class="card-title">사용 난이도 적정</p>
+<p class="card-desc">
+                        누구나 쉽게 접근하고 이해할 수 있어야 합니다.<br/>
+                        사용하기 너무 어렵거나 복잡하면 쓸모가 없습니다.
+                    </p>
+<div class="card-keywords">
+<p>#접근성 #표준화 #이해용이</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>데이터가 많다고 무조건 좋은 것은 아닙니다. '쓰레기를 넣으면 쓰레기가 나온다(GIGO)'는 말처럼, 품질이 중요합니다.</li>
+<li>제가 생각하는 쓸모있는 데이터의 3가지 조건입니다.</li>
+<li>첫째, 현실을 왜곡하지 않아야 합니다. 정확하고 시의적절해야 현실을 제대로 파악할 수 있죠.</li>
+<li>둘째, 의사결정에 활용할 수 있어야 합니다. 아무리 정확해도 내 업무와 관련이 없거나 판단 기준이 되지 못하면 무용지물입니다.</li>
+<li>셋째, 사용하기 쉬워야 합니다. 전문가만 해독할 수 있는 데이터보다는, 실무자가 쉽게 열어보고 이해할 수 있는 데이터가 진짜 힘을 발휘합니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 현업 요약 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-accent-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 24px;
+            background-color: #1a365d; /* Navy */
+            z-index: 10;
+        }
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 8rem;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0f4f8' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        /* Summary Box Styling */
+        .summary-box {
+            position: relative;
+            background-color: #ebf8ff; /* Light Blue/Mint tint */
+            border: 2px solid #38b2ac; /* Mint */
+            border-radius: 1.5rem;
+            padding: 4rem 6rem;
+            max-width: 1000px;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            z-index: 1;
+        }
+        
+        .quote-mark {
+            position: absolute;
+            font-family: serif;
+            font-size: 8rem;
+            color: #3182ce; /* Blue */
+            opacity: 0.3;
+            line-height: 1;
+        }
+        
+        .quote-left {
+            top: -2rem;
+            left: 2rem;
+        }
+        
+        .quote-right {
+            bottom: -5rem;
+            right: 2rem;
+        }
+        
+        .main-message {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d; /* Navy */
+            line-height: 1.4;
+            margin-bottom: 2rem;
+            word-break: keep-all;
+        }
+        
+        .highlight {
+            color: #2b6cb0;
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-color: #81e6d9; /* Mint highlight */
+            opacity: 0.5;
+            z-index: -1;
+            transform: skewX(-10deg);
+        }
+        
+        .sub-message {
+            font-size: 1.5rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        
+        .handwritten-note {
+            position: absolute;
+            bottom: -60px;
+            right: 0;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 2rem;
+            color: #e53e3e;
+            transform: rotate(-5deg);
+            background-color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #fed7d7;
+        }
+        
+        .decoration-icon {
+            position: absolute;
+            font-size: 15rem;
+            color: #e2e8f0;
+            opacity: 0.4;
+            z-index: 0;
+            right: -5rem;
+            top: -5rem;
+            transform: rotate(15deg);
+        }
+
+        .check-point {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            color: #2c5282;
+            background-color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            border: 1px solid #bee3f8;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Accent Bar -->
+<div class="bg-accent-bar"></div>
+<!-- Content Area -->
+<div class="content-area">
+<!-- Background Decoration -->
+<i class="fas fa-thumbs-up decoration-icon"></i>
+<div class="summary-box">
+<div class="quote-mark quote-left">“</div>
+<p class="text-mint-600 font-bold uppercase tracking-wider mb-4" style="color: #38b2ac;">Key Takeaway</p>
+<p class="main-message">
+                    데이터가 <span class="highlight">정확하고</span>(왜곡X),<br/>
+<span class="highlight">목적에 맞고</span>(활용성↑),<br/>
+<span class="highlight">누구나 쓸 수 있어야</span>(난이도↓)<br/>
+                    진짜 쓸모있는 데이터입니다.
+                </p>
+<div class="mt-8 flex justify-center flex-wrap gap-4">
+<div class="check-point">
+<i class="fas fa-check-circle text-green-500 mr-2"></i> 정확성
+                    </div>
+<div class="check-point">
+<i class="fas fa-check-circle text-green-500 mr-2"></i> 목적 적합성
+                    </div>
+<div class="check-point">
+<i class="fas fa-check-circle text-green-500 mr-2"></i> 접근 용이성
+                    </div>
+</div>
+<div class="quote-mark quote-right">”</div>
+<div class="handwritten-note">
+<p>우리 팀 데이터는 어떤가요?</p>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>자, 이번 섹션의 핵심을 한 줄로 요약해 보겠습니다.</li>
+<li>우리가 만드는 데이터가 정말 쓸모가 있으려면 이 세 가지를 꼭 기억해야 합니다.</li>
+<li>첫째, 정확해야 합니다. 거짓 정보는 없느니만 못합니다.</li>
+<li>둘째, 목적에 맞아야 합니다. 아무리 좋은 정보라도 당장 우리 팀의 목표와 관련이 없다면 소음일 뿐입니다.</li>
+<li>셋째, 누구나 쉽게 쓸 수 있어야 합니다. 파일 하나 여는 데 10분씩 걸리거나, 암호를 3번 입력해야 한다면 아무도 안 봅니다.</li>
+<li>여러분이 다루는 데이터는 이 3가지를 충족하고 있나요? 잠시 생각해보시면 좋겠습니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 데이터 기반 의사결정의 필요성</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .title-area::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #38b2ac; /* Mint */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #38b2ac; /* Mint accent */
+            transition: transform 0.2s;
+        }
+        .bullet-item:hover {
+            transform: translateX(5px);
+            background-color: #f7fafc;
+        }
+        .bullet-icon {
+            color: #38b2ac;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.25rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .bullet-content {
+            flex: 1;
+        }
+        .bullet-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        .bullet-desc {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #2c5282;
+            font-weight: 700;
+            background-color: #ebf8ff;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .side-visual {
+            position: absolute;
+            right: 5rem;
+            top: 55%;
+            transform: translateY(-50%);
+            width: 420px;
+            height: 420px;
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #cbd5e0;
+            z-index: 0;
+            flex-direction: column;
+        }
+        .main-content {
+            width: 60%;
+            z-index: 1;
+        }
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #3182ce;
+        }
+        .chart-container {
+            width: 350px;
+            height: 350px;
+            position: relative;
+        }
+        .benefit-label {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<p class="sub-title">Chapter 2. 데이터 기반 의사결정</p>
+<h1 class="main-title">왜 데이터 기반 의사결정인가?</h1>
+</div>
+<div class="flex h-full relative">
+<!-- Main Bullet Content -->
+<div class="main-content bullet-list">
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-history"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">반복 학습: 과거로부터의 개선</p>
+<p class="bullet-desc">
+                                의사결정은 일회성이 아니라 <span class="highlight-text">반복되는 과정</span>입니다.<br/>
+                                과거의 데이터를 분석해서 미래의 의사결정을 합리적으로 개선할 수 있습니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-chart-line"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">불확실성 축소: 직관에서 근거로</p>
+<p class="bullet-desc">
+                                결과를 미리 알 수는 없지만, 데이터는 <span class="highlight-text">불확실성을 줄여주는</span> 강력한 도구입니다.<br/>
+                                '감'이나 '경험'에만 의존하던 방식을 객관적 근거 중심으로 전환합니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-bullseye"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">성과 관리: 목표와 지표의 선순환</p>
+<p class="bullet-desc">
+                                성공과 실패를 단순히 느낌으로 판단하지 않고,<br/>
+<span class="highlight-text">명확한 지표</span>를 통해 성과를 측정하고 관리할 수 있게 됩니다.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Side Visual -->
+<div class="side-visual">
+<div class="chart-container">
+<canvas id="decisionChart"></canvas>
+</div>
+<div class="text-center mt-4">
+<p class="text-gray-600 font-medium">데이터 활용 시 성공 확률 변화</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>우리는 살아가면서 수많은 의사결정을 합니다. 업무에서도 마찬가지죠.</li>
+<li>왜 굳이 데이터 기반이어야 할까요? 첫째, 의사결정은 반복되기 때문입니다. 지난번의 데이터를 통해 이번 결정을 더 낫게 만들 수 있죠.</li>
+<li>둘째, 불확실성을 줄여줍니다. 우리가 미래를 완벽히 예측할 순 없지만, 데이터는 안개 속에서 나침반 역할을 해줍니다.</li>
+<li>셋째, 성과 관리가 가능해집니다. '열심히 했다'가 아니라 '데이터로 보니 이만큼 개선되었다'라고 말할 수 있게 됩니다.</li>
+<li>오른쪽 차트는 데이터 활용 여부에 따른 성과 개선의 예시를 보여줍니다. 직관보다 훨씬 높은 성공 확률을 기대할 수 있죠.</li>
+</ul>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+        // Simple Bar Chart Visualization
+        const ctx = document.getElementById('decisionChart').getContext('2d');
+        const decisionChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['직관 기반', '데이터 기반'],
+                datasets: [{
+                    label: '의사결정 성공 확률 (%)',
+                    data: [45, 85],
+                    backgroundColor: [
+                        'rgba(203, 213, 224, 0.8)', // Gray for Intuition
+                        'rgba(56, 178, 172, 0.8)'  // Mint for Data-Driven
+                    ],
+                    borderColor: [
+                        'rgba(160, 174, 192, 1)',
+                        'rgba(49, 151, 149, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        enabled: true
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                animation: {
+                    duration: 1500,
+                    easing: 'easeOutQuart'
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 참여활동 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .activity-badge {
+            background-color: #38b2ac; /* Mint */
+            color: white;
+            font-weight: 700;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            margin-right: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(56, 178, 172, 0.4);
+        }
+        .main-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a365d;
+        }
+        
+        /* Activity Content Layout */
+        .activity-container {
+            display: flex;
+            flex: 1;
+            gap: 3rem;
+        }
+        
+        /* Left: Question Area */
+        .question-box {
+            flex: 1;
+            background-color: #ebf8ff; /* Light Blue */
+            border-radius: 1rem;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            border-left: 8px solid #3182ce;
+        }
+        
+        .question-icon {
+            font-size: 3rem;
+            color: #3182ce;
+            margin-bottom: 1.5rem;
+        }
+        
+        .question-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c5282;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+        }
+        
+        .question-sub {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .question-sub-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        /* Right: Memo Area */
+        .memo-box {
+            flex: 1.2;
+            background-color: #fff;
+            border: 2px dashed #cbd5e0;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            position: relative;
+            /* Simple grid pattern using background-color only to avoid gradient issues */
+            background-color: #f7fafc;
+        }
+        
+        .memo-label {
+            position: absolute;
+            top: -15px;
+            left: 30px;
+            background-color: #fff;
+            padding: 0 10px;
+            color: #718096;
+            font-weight: 700;
+            font-size: 1rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+        }
+        
+        .memo-lines {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-top: 1rem;
+        }
+        
+        .memo-line {
+            border-bottom: 2px solid #e2e8f0;
+            height: 40px;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        .memo-line-label {
+            font-size: 1rem;
+            color: #a0aec0;
+            margin-right: 1rem;
+            min-width: 80px;
+            font-weight: 500;
+        }
+
+        .handwriting-hint {
+            font-family: 'Nanum Pen Script', cursive;
+            color: #a0aec0;
+            font-size: 2rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-5deg);
+            opacity: 0.5;
+            pointer-events: none;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        /* Time & Instruction */
+        .instruction-bar {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f7fafc;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .timer-info {
+            display: flex;
+            align-items: center;
+            color: #e53e3e; /* Red for timer */
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .action-info {
+            color: #4a5568;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<span class="activity-badge">Activity 02</span>
+<h1 class="main-title">최근 의사결정 떠올리기</h1>
+</div>
+<div class="activity-container">
+<!-- Left: Question -->
+<div class="question-box">
+<div class="question-icon">
+<i class="fas fa-brain"></i>
+</div>
+<p class="question-text">최근 내 결정 1가지는 무엇이었나요?</p>
+<div class="question-sub">
+<div class="question-sub-item"><i class="fas fa-check-circle text-blue-500 mr-2"></i>업무상 결정 (업체 선정, 일정 조정 등)</div>
+<div class="question-sub-item"><i class="fas fa-check-circle text-blue-500 mr-2"></i>개인적 결정 (점심 메뉴, 쇼핑 등)</div>
+<div class="question-sub-item"><i class="fas fa-question-circle text-blue-500 mr-2"></i>그때 <strong>어떤 데이터(근거)</strong>를 참고했나요?</div>
+<div class="question-sub-item"><i class="fas fa-times-circle text-red-400 mr-2"></i>만약 데이터가 없었다면, 왜 없었나요?</div>
+</div>
+</div>
+<!-- Right: Memo -->
+<div class="memo-box">
+<span class="memo-label"><i class="fas fa-pencil-alt mr-2"></i>나의 의사결정 회고</span>
+<div class="handwriting-hint">
+                    어떤 결정을 내렸나요?<br/>
+                    데이터를 참고했나요?
+                </div>
+<div class="memo-lines">
+<div class="memo-line">
+<span class="memo-line-label">의사결정:</span>
+</div>
+<div class="memo-line">
+<span class="memo-line-label">참고 데이터:</span>
+</div>
+<div class="memo-line">
+<span class="memo-line-label">부족했던 점:</span>
+</div>
+<div class="memo-line"></div>
+</div>
+</div>
+</div>
+<div class="instruction-bar">
+<div class="timer-info">
+<i class="fas fa-stopwatch mr-2"></i> 소요시간: 2분
+            </div>
+<div class="action-info">
+<i class="fas fa-comment-dots mr-2"></i> 간단히 메모하고, 옆 사람과 '데이터 유무'를 이야기해보세요.
+            </div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>자, 이제 데이터 기반 의사결정으로 넘어가기 전에, 우리의 실제 모습을 돌아보겠습니다.</li>
+<li>최근에 내렸던 결정 중 기억나는 것 하나를 떠올려보세요. 거창한 업무 결정이 아니어도 됩니다.</li>
+<li>'점심에 짜장면을 먹을까 짬뽕을 먹을까' 고민하다가, 어제 먹은 메뉴(데이터)를 떠올리고 결정했다면 그것도 데이터 기반입니다.</li>
+<li>업무에서는 어땠나요? 작년도 실적표를 보고 예산을 짰나요? 아니면 '왠지 그럴 것 같아서' 감으로 결정했나요?</li>
+<li>데이터가 있었다면 무엇이었는지, 없었다면 왜 없었는지(찾기 힘들어서? 아예 없어서?) 짧게 적어보겠습니다.</li>
+<li>(활동 후) 데이터가 없는 의사결정은 불안합니다. 반면 확실한 근거가 있으면 결정에 자신감이 생기죠. 그것이 데이터의 힘입니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 데이터 기반 의사결정 요소</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.25rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        /* Two Column Layout */
+        .two-column-container {
+            display: flex;
+            flex: 1;
+            gap: 2rem;
+            position: relative;
+        }
+
+        /* Center Divider Icon */
+        .center-divider {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: #2d3748;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            z-index: 10;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 4px solid white;
+        }
+
+        /* Column Styles */
+        .column-box {
+            flex: 1;
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .left-column {
+            background-color: #ebf8ff; /* Light Blue */
+            border-top: 8px solid #3182ce; /* Blue */
+        }
+
+        .right-column {
+            background-color: #f0fff4; /* Light Green/Mint */
+            border-top: 8px solid #38b2ac; /* Mint */
+        }
+
+        .col-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid rgba(0,0,0,0.05);
+            padding-bottom: 1rem;
+        }
+
+        .col-icon {
+            font-size: 2.5rem;
+            margin-right: 1rem;
+        }
+        
+        .left-column .col-icon { color: #3182ce; }
+        .right-column .col-icon { color: #38b2ac; }
+
+        .col-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #2d3748;
+        }
+
+        .col-subtitle {
+            font-size: 1rem;
+            color: #718096;
+            margin-top: 0.2rem;
+            font-weight: 500;
+        }
+
+        /* List Items */
+        .list-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .list-item {
+            background-color: white;
+            padding: 1.2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .item-icon {
+            margin-top: 0.2rem;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .left-column .item-icon { color: #3182ce; }
+        .right-column .item-icon { color: #38b2ac; }
+
+        .item-content {
+            flex: 1;
+        }
+
+        .item-title {
+            font-weight: 700;
+            color: #2d3748;
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .item-desc {
+            color: #4a5568;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+        
+        /* Background Icons */
+        .bg-icon {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            font-size: 10rem;
+            opacity: 0.05;
+            pointer-events: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">데이터 기반 의사결정: 무엇이 필요할까?</h1>
+<p class="sub-title">성공적인 의사결정을 위해 반드시 갖춰야 할 두 가지 요소</p>
+</div>
+<div class="two-column-container">
+<div class="center-divider">
+<i class="fas fa-plus"></i>
+</div>
+<!-- Left Column: Data (Input) -->
+<div class="column-box left-column">
+<i class="fas fa-database bg-icon"></i>
+<div class="col-header">
+<div class="col-icon">
+<i class="fas fa-file-invoice-dollar"></i>
+</div>
+<div>
+<p class="col-title">참고할 데이터</p>
+<p class="col-subtitle">Input: 판단의 근거 자료</p>
+</div>
+</div>
+<div class="list-container">
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-table"></i></div>
+<div class="item-content">
+<p class="item-title">가공된 형태</p>
+<p class="item-desc">원천 데이터가 아닌 표, 그래프, 보고서 형태로 정리되어야 함</p>
+</div>
+</div>
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-search"></i></div>
+<div class="item-content">
+<p class="item-title">접근성 &amp; 품질</p>
+<p class="item-desc">필요할 때 바로 볼 수 있고, 내용이 정확하며 일관되어야 함</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Criteria (Output Evaluation) -->
+<div class="column-box right-column">
+<i class="fas fa-clipboard-check bg-icon"></i>
+<div class="col-header">
+<div class="col-icon">
+<i class="fas fa-ruler-combined"></i>
+</div>
+<div>
+<p class="col-title">판단 기준</p>
+<p class="col-subtitle">Standard: 결과 평가의 잣대</p>
+</div>
+</div>
+<div class="list-container">
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-tasks"></i></div>
+<div class="item-content">
+<p class="item-title">성공/실패 정의</p>
+<p class="item-desc">의사결정의 결과가 좋았는지 나빴는지 판가름할 기준(성공, 실패, 점수)</p>
+</div>
+</div>
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-bullseye"></i></div>
+<div class="item-content">
+<p class="item-title">사전 합의</p>
+<p class="item-desc">결과가 나온 뒤에 정하는 것이 아니라, 사전에 정의되고 공유되어야 함</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>데이터 기반 의사결정을 하려면 딱 두 가지가 필요합니다.</li>
+<li>첫째는 당연히 '데이터'입니다. 하지만 그냥 쌓여있는 데이터가 아니라, 의사결정자가 읽을 수 있는 표나 보고서 형태여야 합니다.</li>
+<li>둘째는 의외로 간과하기 쉬운 '판단 기준'입니다.</li>
+<li>우리가 어떤 결정을 내리고 나서, 그 결정이 잘한 결정인지 못한 결정인지 어떻게 알 수 있을까요?</li>
+<li>명확한 기준(성공/실패, 목표 달성률 등)이 없으면 데이터가 아무리 많아도 피드백을 얻을 수 없습니다.</li>
+<li>즉, '좋은 재료(데이터)'와 '정확한 레시피(기준)'가 있어야 요리(의사결정)가 성공합니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 데이터 기반 의사결정 프로세스</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 2.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.2rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        /* Timeline Container */
+        .timeline-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 0 1rem;
+        }
+
+        /* Connecting Line */
+        .timeline-line {
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            right: 5%;
+            height: 4px;
+            background-color: #e2e8f0;
+            z-index: 1;
+        }
+        
+        .timeline-line-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 80%; /* Progress simulation */
+            background-color: #3182ce;
+            border-radius: 2px;
+        }
+
+        /* Steps */
+        .steps-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .step-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 140px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .step-item:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Step Circle/Icon */
+        .step-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: white;
+            border: 4px solid #cbd5e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #718096;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .step-number {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 26px;
+            height: 26px;
+            background-color: #4a5568;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border: 2px solid white;
+        }
+
+        /* Active/Completed Styles */
+        .step-active .step-circle {
+            border-color: #3182ce;
+            color: #3182ce;
+            background-color: #ebf8ff;
+        }
+        
+        .step-active .step-number {
+            background-color: #3182ce;
+        }
+
+        .step-final .step-circle {
+            border-color: #38b2ac;
+            color: #38b2ac;
+            background-color: #e6fffa;
+        }
+        
+        .step-final .step-number {
+            background-color: #38b2ac;
+        }
+
+        /* Text Content */
+        .step-content {
+            text-align: center;
+        }
+
+        .step-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            height: 3rem; /* Fixed height for alignment */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+        }
+
+        .step-desc {
+            font-size: 0.85rem;
+            color: #718096;
+            line-height: 1.4;
+            background-color: #f7fafc;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            border: 1px dashed #cbd5e0;
+            width: 100%;
+        }
+
+        /* Iteration Loop Arrow (SVG) */
+        .loop-arrow {
+            position: absolute;
+            top: -30px;
+            right: 80px;
+            width: 100px;
+            height: 40px;
+            z-index: 0;
+            opacity: 0.2;
+        }
+
+        /* Bottom Message */
+        .bottom-message {
+            margin-top: 1rem;
+            background-color: #edf2f7;
+            padding: 1rem 2rem;
+            border-radius: 3rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .message-icon {
+            color: #3182ce;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .message-text {
+            color: #4a5568;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">데이터 기반 의사결정 프로세스</h1>
+<p class="sub-title">데이터가 의사결정으로 이어지는 6단계 흐름</p>
+</div>
+<div class="timeline-container">
+<!-- Line -->
+<div class="timeline-line">
+<div class="timeline-line-fill"></div>
+</div>
+<!-- Steps -->
+<div class="steps-wrapper">
+<!-- Step 1 -->
+<div class="step-item step-active">
+<div class="step-circle">
+<span class="step-number">1</span>
+<i class="fas fa-question"></i>
+</div>
+<div class="step-content">
+<p class="step-title">문제 정의</p>
+<p class="step-desc">해결해야 할 문제와 목표를 명확히 설정</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="step-item step-active">
+<div class="step-circle">
+<span class="step-number">2</span>
+<i class="fas fa-search-plus"></i>
+</div>
+<div class="step-content">
+<p class="step-title">데이터 수집</p>
+<p class="step-desc">필요한 데이터를 내/외부에서 확보</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-item step-active">
+<div class="step-circle">
+<span class="step-number">3</span>
+<i class="fas fa-filter"></i>
+</div>
+<div class="step-content">
+<p class="step-title">가공 &amp; 시각화</p>
+<p class="step-desc">전처리 후 이해하기 쉬운 형태로 변환</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="step-item step-active">
+<div class="step-circle">
+<span class="step-number">4</span>
+<i class="fas fa-chart-line"></i>
+</div>
+<div class="step-content">
+<p class="step-title">분석 &amp; 인사이트</p>
+<p class="step-desc">패턴을 찾고 의미를 해석</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="step-item step-active">
+<div class="step-circle">
+<span class="step-number">5</span>
+<i class="fas fa-gavel"></i>
+</div>
+<div class="step-content">
+<p class="step-title">의사결정</p>
+<p class="step-desc">분석 결과를 토대로 최적의 대안 선택</p>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="step-item step-final">
+<div class="step-circle">
+<span class="step-number">6</span>
+<i class="fas fa-sync-alt"></i>
+</div>
+<div class="step-content">
+<p class="step-title">피드백 &amp; 평가</p>
+<p class="step-desc">결과를 측정하고 다음 과정에 반영</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bottom-message">
+<i class="fas fa-lightbulb message-icon"></i>
+<p class="message-text">핵심은 한 번으로 끝나는 것이 아니라, 피드백을 통해 <strong>'반복'</strong>하며 프로세스를 <strong>'표준화'</strong>하는 것입니다.</p>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>데이터 기반 의사결정은 단순히 데이터를 보는 것에서 끝나지 않습니다. 일련의 과정이 필요합니다.</li>
+<li>가장 중요한 첫 단계는 '문제 정의'입니다. 무엇을 해결할지 모르면 어떤 데이터를 모아야 할지도 모르게 됩니다.</li>
+<li>그 다음 데이터를 수집하고, 분석하기 좋게 가공합니다.</li>
+<li>분석을 통해 인사이트를 얻고, 이를 바탕으로 실제 의사결정을 내립니다.</li>
+<li>하지만 여기서 끝나면 안 됩니다. 마지막 6단계, '피드백'이 있어야 합니다.</li>
+<li>내 결정이 맞았는지 틀렸는지 확인하고, 그 결과를 다시 1단계로 가져가야 조직의 데이터 역량이 성장합니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 현업 요약 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-accent-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 24px;
+            background-color: #1a365d; /* Navy */
+            z-index: 10;
+        }
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 8rem;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0f4f8' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        /* Summary Box Styling */
+        .summary-box {
+            position: relative;
+            background-color: #ebf8ff; /* Light Blue/Mint tint */
+            border: 2px solid #38b2ac; /* Mint */
+            border-radius: 1.5rem;
+            padding: 4rem 6rem;
+            max-width: 1000px;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            z-index: 1;
+        }
+        
+        .quote-mark {
+            position: absolute;
+            font-family: serif;
+            font-size: 8rem;
+            color: #3182ce; /* Blue */
+            opacity: 0.3;
+            line-height: 1;
+        }
+        
+        .quote-left {
+            top: -2rem;
+            left: 2rem;
+        }
+        
+        .quote-right {
+            bottom: -5rem;
+            right: 2rem;
+        }
+        
+        .main-message {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d; /* Navy */
+            line-height: 1.4;
+            margin-bottom: 2rem;
+            word-break: keep-all;
+        }
+        
+        .highlight {
+            color: #2b6cb0;
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-color: #81e6d9; /* Mint highlight */
+            opacity: 0.5;
+            z-index: -1;
+            transform: skewX(-10deg);
+        }
+        
+        .sub-message {
+            font-size: 1.5rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        
+        .handwritten-note {
+            position: absolute;
+            bottom: -60px;
+            right: 0;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 2rem;
+            color: #e53e3e;
+            transform: rotate(-5deg);
+            background-color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #fed7d7;
+        }
+        
+        .decoration-icon {
+            position: absolute;
+            font-size: 15rem;
+            color: #e2e8f0;
+            opacity: 0.4;
+            z-index: 0;
+            right: -5rem;
+            top: -5rem;
+            transform: rotate(15deg);
+        }
+
+        .check-point {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 10px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c5282;
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 2px solid #bee3f8;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .formula-plus {
+            font-size: 1.5rem;
+            color: #38b2ac;
+            font-weight: 900;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Accent Bar -->
+<div class="bg-accent-bar"></div>
+<!-- Content Area -->
+<div class="content-area">
+<!-- Background Decoration -->
+<i class="fas fa-chart-line decoration-icon"></i>
+<div class="summary-box">
+<div class="quote-mark quote-left">“</div>
+<p class="text-mint-600 font-bold uppercase tracking-wider mb-4" style="color: #38b2ac;">Key Takeaway</p>
+<p class="main-message">
+<span class="highlight">좋은 데이터</span>와 
+                    <span class="highlight">명확한 기준</span>,<br/>
+                    그리고 <span class="highlight">반복 학습</span>이<br/>
+                    의사결정을 강하게 만듭니다.
+                </p>
+<div class="mt-8 flex justify-center items-center flex-wrap gap-2">
+<div class="check-point">
+<i class="fas fa-database text-blue-500 mr-2"></i> 좋은 데이터
+                    </div>
+<div class="formula-plus">+</div>
+<div class="check-point">
+<i class="fas fa-ruler-combined text-indigo-500 mr-2"></i> 명확한 기준
+                    </div>
+<div class="formula-plus">+</div>
+<div class="check-point">
+<i class="fas fa-sync-alt text-green-500 mr-2"></i> 반복 학습
+                    </div>
+</div>
+<div class="quote-mark quote-right">”</div>
+<div class="handwritten-note">
+<p>실패해도 괜찮아요, 배우면 되니까요!</p>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>데이터 기반 의사결정 섹션의 핵심 요약입니다.</li>
+<li>결국 3가지 박자가 맞아야 합니다. 믿을 수 있는 '좋은 데이터', 성공과 실패를 가르는 '명확한 기준', 그리고 결과를 보고 다시 시도하는 '반복 학습'입니다.</li>
+<li>데이터만 있다고 해결되지 않습니다. 기준이 없으면 해석이 불가능하고, 반복하지 않으면 개선되지 않습니다.</li>
+<li>특히 '반복 학습'이 중요합니다. 한 번의 실패가 끝이 아니라, 다음 의사결정을 위한 데이터가 된다는 점을 잊지 마세요.</li>
+<li>우리 팀의 의사결정에는 이 3가지 요소 중 무엇이 부족한지 한 번 점검해보시기 바랍니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 고용노동부 데이터 양(범위)</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 2.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.2rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1.5rem;
+            flex: 1;
+            padding: 0 1rem 1rem 1rem;
+        }
+
+        /* Grid Item */
+        .grid-item {
+            background-color: #f7fafc;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            background-color: #ebf8ff;
+            border-color: #bee3f8;
+        }
+
+        /* Icon Circle */
+        .icon-wrapper {
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            color: #3182ce;
+            font-size: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .grid-item:hover .icon-wrapper {
+            color: #38b2ac; /* Mint on hover */
+        }
+
+        /* Text Content */
+        .item-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            color: #718096;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        /* Background Pattern for Items */
+        .bg-pattern {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            opacity: 0.1;
+            z-index: 0;
+            color: #cbd5e0;
+        }
+
+        /* Specific Colors for variety (Optional) */
+        .item-1 .icon-wrapper { color: #e53e3e; }
+        .item-2 .icon-wrapper { color: #dd6b20; }
+        .item-3 .icon-wrapper { color: #38b2ac; }
+        .item-4 .icon-wrapper { color: #3182ce; }
+        .item-5 .icon-wrapper { color: #805ad5; }
+        .item-6 .icon-wrapper { color: #d69e2e; }
+        .item-7 .icon-wrapper { color: #00b5d8; }
+        .item-8 .icon-wrapper { color: #718096; }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">고용노동부 데이터: 양(Volume)</h1>
+<p class="sub-title">국민의 삶 전반에 걸친 방대하고 다양한 데이터 보유</p>
+</div>
+<div class="grid-container">
+<!-- Item 1 -->
+<div class="grid-item item-1">
+<div class="icon-wrapper">
+<i class="fas fa-gavel"></i>
+</div>
+<p class="item-title">노동법 위반</p>
+<p class="item-desc">임금체불, 부당해고 등<br/>신고 및 처리 내역</p>
+<i class="fas fa-gavel bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 2 -->
+<div class="grid-item item-2">
+<div class="icon-wrapper">
+<i class="fas fa-hard-hat"></i>
+</div>
+<p class="item-title">산업재해/보상</p>
+<p class="item-desc">사고 발생 현황,<br/>산재 승인 및 보상 데이터</p>
+<i class="fas fa-hard-hat bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 3 -->
+<div class="grid-item item-3">
+<div class="icon-wrapper">
+<i class="fas fa-users"></i>
+</div>
+<p class="item-title">노동조합</p>
+<p class="item-desc">설립 신고, 조합원 수,<br/>단체협약 현황</p>
+<i class="fas fa-users bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 4 -->
+<div class="grid-item item-4">
+<div class="icon-wrapper">
+<i class="fas fa-user-clock"></i>
+</div>
+<p class="item-title">비정규직</p>
+<p class="item-desc">고용 형태별 근로조건,<br/>차별 시정 내역</p>
+<i class="fas fa-user-clock bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 5 -->
+<div class="grid-item item-5">
+<div class="icon-wrapper">
+<i class="fas fa-globe-asia"></i>
+</div>
+<p class="item-title">외국인 노동자</p>
+<p class="item-desc">고용허가제(E-9) 현황,<br/>사업장 배정 정보</p>
+<i class="fas fa-globe-asia bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 6 -->
+<div class="grid-item item-6">
+<div class="icon-wrapper">
+<i class="fas fa-coins"></i>
+</div>
+<p class="item-title">임금·근로시간</p>
+<p class="item-desc">퇴직연금 가입,<br/>주52시간제 준수 여부</p>
+<i class="fas fa-coins bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 7 -->
+<div class="grid-item item-7">
+<div class="icon-wrapper">
+<i class="fas fa-shield-alt"></i>
+</div>
+<p class="item-title">고용·산재보험</p>
+<p class="item-desc">피보험자 자격 취득/상실,<br/>보험료 부과 내역</p>
+<i class="fas fa-shield-alt bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 8 -->
+<div class="grid-item item-8">
+<div class="icon-wrapper">
+<i class="fas fa-chart-bar"></i>
+</div>
+<p class="item-title">노동시장 통계</p>
+<p class="item-desc">사업체 노동력 조사,<br/>지역별 고용 동향</p>
+<i class="fas fa-chart-bar bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>고용노동부는 다른 어떤 부처보다도 방대한 데이터를 가지고 있습니다.</li>
+<li>국민 한 사람 한 사람의 일자리와 관련된 거의 모든 정보가 모이는 곳입니다.</li>
+<li>근로계약부터 시작해서 임금, 근로시간, 퇴직연금까지 생애주기 전반의 데이터가 있습니다.</li>
+<li>또한 산업안전, 외국인 고용, 노사 관계 등 전문적인 영역의 데이터도 보유하고 있습니다.</li>
+<li>고용보험과 산재보험 데이터는 전국민을 대상으로 하는 거대한 사회안전망 데이터베이스입니다.</li>
+<li>이렇게 '양'적으로는 부족함이 없어 보입니다. 그렇다면 '질'은 어떨까요?</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 고용노동부 데이터: 질 관리 이슈</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .title-area::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #38b2ac; /* Mint */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .flex-container {
+            display: flex;
+            height: 100%;
+            position: relative;
+        }
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 60%;
+            z-index: 1;
+        }
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #38b2ac; /* Mint accent */
+            transition: transform 0.2s;
+        }
+        .bullet-item:hover {
+            transform: translateX(5px);
+            background-color: #f7fafc;
+        }
+        .bullet-icon {
+            color: #38b2ac;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.25rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .bullet-content {
+            flex: 1;
+        }
+        .bullet-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        .bullet-desc {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #c53030; /* Red for issues */
+            font-weight: 700;
+            background-color: #fff5f5;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .side-visual {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 420px;
+            height: 400px;
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #cbd5e0;
+            z-index: 0;
+            padding: 2rem;
+        }
+        .issue-card {
+            width: 100%;
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            border-left: 4px solid #fc8181; /* Light red */
+        }
+        .issue-icon {
+            font-size: 1.5rem;
+            color: #e53e3e;
+            margin-right: 1rem;
+            width: 40px;
+            text-align: center;
+        }
+        .issue-text {
+            font-size: 1rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        .stat-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 8px solid #fed7d7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #e53e3e;
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 0.8rem;
+            color: #718096;
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<p class="sub-title">Chapter 3. 고용노동부의 데이터</p>
+<h1 class="main-title">고용노동부 데이터: 질 관리 이슈</h1>
+</div>
+<div class="flex-container">
+<!-- Main Bullet Content -->
+<div class="bullet-list">
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-project-diagram"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">목적별 분산 관리</p>
+<p class="bullet-desc">
+                                데이터가 목적에 따라 흩어져 있어<br/>
+<span class="highlight-text">통합적이고 체계적인 관리</span>가 이뤄지지 못하고 있습니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-unlink"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">메타데이터 부실</p>
+<p class="bullet-desc">
+                                데이터 정의서 등 메타데이터 관리가 미흡하여<br/>
+                                여러 데이터를 <span class="highlight-text">연계하려고 해도 불가능</span>하거나 큰 노력이 필요합니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-users-slash"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">인력 및 조직 부족</p>
+<p class="bullet-desc">
+                                전체 인력 규모에 비해 데이터 관리 인력은 턱없이 부족합니다.<br/>
+                                전담 인력이 <span class="highlight-text">전체의 1% 미만</span>에 불과한 실정입니다.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Side Visual -->
+<div class="side-visual">
+<div class="issue-card">
+<div class="issue-icon"><i class="fas fa-exclamation-triangle"></i></div>
+<div class="issue-text">통합 관리 부재</div>
+</div>
+<div class="issue-card">
+<div class="issue-icon"><i class="fas fa-link"></i></div>
+<div class="issue-text">데이터 연계 어려움</div>
+</div>
+<div class="stat-circle">
+<span class="stat-number">&lt; 1%</span>
+<span class="stat-label">데이터 전담 인력</span>
+</div>
+<div class="text-center mt-4">
+<p class="text-gray-500 text-sm font-medium">데이터 관리의 현실적 한계</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>고용노동부 데이터의 양은 방대하지만, 질적인 측면에서는 아쉬운 점이 많습니다. 크게 세 가지 이슈가 있습니다.</li>
+<li>첫째, 데이터가 통합되지 못하고 목적별로 분산되어 있습니다. 이로 인해 전체적인 현황 파악이나 체계적인 관리가 어렵습니다.</li>
+<li>둘째, 메타데이터, 즉 데이터에 대한 설명이 부실합니다. 이는 부서 간 데이터 연계를 불가능하게 만들거나 불필요한 행정 비용을 발생시킵니다.</li>
+<li>셋째, 가장 심각한 문제는 인력 부족입니다. 데이터 관리 전담 인력이 전체의 1%도 되지 않아, 현업에서 데이터를 제대로 관리할 여력이 없는 상황입니다.</li>
+<li>이러한 질적 문제는 데이터 기반 행정으로 나아가는 데 큰 걸림돌이 되고 있습니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 양 vs 질 비교표</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 2.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.2rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        /* Comparison Table Container */
+        .comparison-container {
+            display: flex;
+            flex: 1;
+            gap: 2rem;
+            justify-content: center;
+            align-items: stretch;
+            padding: 0 2rem 2rem 2rem;
+        }
+
+        /* Column Styles */
+        .col-box {
+            flex: 1;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border: 1px solid #e2e8f0;
+        }
+
+        .col-header {
+            padding: 1.5rem;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 140px;
+        }
+
+        .col-header-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .col-header-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 0.2rem;
+        }
+        
+        .col-header-subtitle {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+        }
+
+        /* Left Column (Volume) */
+        .left-col .col-header {
+            background-color: #2c5282; /* Navy Blue */
+        }
+        
+        /* Right Column (Quality) */
+        .right-col .col-header {
+            background-color: #38b2ac; /* Mint/Teal */
+        }
+
+        /* Table Content */
+        .table-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            background-color: white;
+        }
+
+        .row-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid #edf2f7;
+            margin-bottom: 0.5rem;
+        }
+        
+        .row-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .row-label {
+            font-weight: 700;
+            width: 80px;
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-right: 1rem;
+            text-align: center;
+            background-color: #f7fafc;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .row-text {
+            flex: 1;
+        }
+        
+        .row-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.2rem;
+        }
+        
+        .row-desc {
+            font-size: 0.95rem;
+            color: #718096;
+            line-height: 1.4;
+        }
+
+        /* VS Badge */
+        .vs-badge {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: #e53e3e;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.5rem;
+            border: 4px solid white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+        /* Check/Cross Icons */
+        .status-icon {
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .icon-good { color: #38b2ac; }
+        .icon-bad { color: #e53e3e; }
+        .icon-neutral { color: #ecc94b; }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">양(Quantity) vs 질(Quality): 무엇이 더 중요한가?</h1>
+<p class="sub-title">데이터의 축적을 넘어 가치 창출로 나아가기 위한 비교</p>
+</div>
+<div class="comparison-container">
+<!-- Left Column: Volume -->
+<div class="col-box left-col">
+<div class="col-header">
+<div class="col-header-icon">
+<i class="fas fa-layer-group"></i>
+</div>
+<p class="col-header-title">양(Volume)</p>
+<p class="col-header-subtitle">폭넓은 커버리지와 축적</p>
+</div>
+<div class="table-content">
+<div class="row-item">
+<div class="row-label">범위</div>
+<div class="row-text">
+<p class="row-title">국민 전체 대상</p>
+<p class="row-desc">전 국민의 고용·노동 생애주기 전반을 포괄</p>
+</div>
+<i class="fas fa-check-circle status-icon icon-good"></i>
+</div>
+<div class="row-item">
+<div class="row-label">다양성</div>
+<div class="row-text">
+<p class="row-title">주제와 형식 풍부</p>
+<p class="row-desc">임금, 안전, 보험 등 다양한 주제와 데이터 형식</p>
+</div>
+<i class="fas fa-check-circle status-icon icon-good"></i>
+</div>
+<div class="row-item">
+<div class="row-label">수집량</div>
+<div class="row-text">
+<p class="row-title">대규모 축적</p>
+<p class="row-desc">오랜 기간 축적된 방대한 행정 데이터 보유</p>
+</div>
+<i class="fas fa-check-circle status-icon icon-good"></i>
+</div>
+</div>
+</div>
+<!-- VS Badge (Positioned absolute relative to container via JS or just overlapping visually if container is relative. Here using layout trick) -->
+<div style="position: relative; width: 0;">
+<div class="vs-badge">VS</div>
+</div>
+<!-- Right Column: Quality -->
+<div class="col-box right-col">
+<div class="col-header">
+<div class="col-header-icon">
+<i class="fas fa-gem"></i>
+</div>
+<p class="col-header-title">질(Quality)</p>
+<p class="col-header-subtitle">신뢰도와 실제 활용성</p>
+</div>
+<div class="table-content">
+<div class="row-item">
+<div class="row-label">접근성</div>
+<div class="row-text">
+<p class="row-title">표준·권한·보안</p>
+<p class="row-desc">부서 칸막이와 보안 규정으로 접근 제한적</p>
+</div>
+<i class="fas fa-exclamation-triangle status-icon icon-neutral"></i>
+</div>
+<div class="row-item">
+<div class="row-label">연계성</div>
+<div class="row-text">
+<p class="row-title">메타데이터 부재</p>
+<p class="row-desc">공통 키 부족으로 시스템 간 데이터 결합 곤란</p>
+</div>
+<i class="fas fa-times-circle status-icon icon-bad"></i>
+</div>
+<div class="row-item">
+<div class="row-label">신뢰성</div>
+<div class="row-text">
+<p class="row-title">이력 및 검증 미흡</p>
+<p class="row-desc">수기 입력 오류, 업데이트 지연 등 품질 이슈</p>
+</div>
+<i class="fas fa-times-circle status-icon icon-bad"></i>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>우리가 가진 자산을 냉정하게 비교해 보겠습니다.</li>
+<li>왼쪽의 '양'적인 측면에서는 매우 훌륭합니다. 국민 전체를 커버하고, 주제도 다양하며, 오랫동안 쌓아온 데이터가 많습니다.</li>
+<li>하지만 오른쪽의 '질'적인 측면, 즉 데이터를 실제로 써먹으려고 할 때는 문제가 드러납니다.</li>
+<li>접근하기 어렵고(접근성), 서로 다른 데이터를 합치기 어려우며(연계성), 믿고 써도 되는지(신뢰성) 확신하기 어려울 때가 있습니다.</li>
+<li>진정한 데이터 강국, 데이터 기반 행정은 '양'에서 '질'로의 전환이 필요합니다.</li>
+<li>쌓아두는 것(Storing)을 넘어 활용하는 것(Using)에 초점을 맞춰야 합니다.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 일하는 방식의 문제: 인식</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .title-area::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #38b2ac; /* Mint */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #38b2ac; /* Mint accent */
+            transition: transform 0.2s;
+        }
+        .bullet-item:hover {
+            transform: translateX(5px);
+            background-color: #f7fafc;
+        }
+        .bullet-icon {
+            color: #38b2ac;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.25rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .bullet-content {
+            flex: 1;
+        }
+        .bullet-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        .bullet-desc {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #c53030; /* Red for negative/warning */
+            font-weight: 700;
+            background-color: #fff5f5;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .side-visual {
+            position: absolute;
+            right: 5rem;
+            top: 55%;
+            transform: translateY(-50%);
+            width: 400px;
+            height: 400px;
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #cbd5e0;
+            z-index: 0;
+        }
+        .main-content {
+            width: 60%;
+            z-index: 1;
+        }
+        /* Visual elements for the side panel */
+        .problem-visual-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            width: 320px;
+        }
+        .problem-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            border: 1px solid #e2e8f0;
+        }
+        .problem-icon {
+            font-size: 2rem;
+            color: #e53e3e; /* Red for problems */
+            margin-bottom: 0.5rem;
+        }
+        .problem-label {
+            font-size: 0.95rem;
+            color: #4a5568;
+            font-weight: 600;
+        }
+        .arrow-down {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #cbd5e0;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<p class="sub-title">Chapter 3. 고용노동부의 데이터</p>
+<h1 class="main-title">일하는 방식의 문제: 인식</h1>
+</div>
+<div class="flex h-full relative">
+<!-- Main Bullet Content -->
+<div class="main-content bullet-list">
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-hard-hat"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">현장 중심의 조직문화</p>
+<p class="bullet-desc">
+                                오랜 기간 현장 해결 중심으로 업무가 정착되었습니다.<br/>
+                                당장의 문제 해결이 급하다 보니 <span class="highlight-text">데이터 기록과 관리의 중요성</span>을 상대적으로 낮게 인식합니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-eye-slash"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">"문제 없으면 그만" 관행</p>
+<p class="bullet-desc">
+                                현장에서 당장 민원이 없거나 사고가 터지지 않으면,<br/>
+                                데이터 관리가 다소 부실하더라도 <span class="highlight-text">문제 삼지 않는 분위기</span>가 존재합니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-file-excel"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">시스템 대신 수기 취합</p>
+<p class="bullet-desc">
+                                국회나 언론 대응 시, 내부 통계 시스템을 신뢰하거나 활용하기보다<br/>
+                                그때그때 <span class="highlight-text">공문이나 메일로 엑셀 파일을 취합</span>하는 방식을 당연하게 여깁니다.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Side Visual -->
+<div class="side-visual">
+<div class="problem-visual-container">
+<div class="problem-card">
+<i class="fas fa-running problem-icon"></i>
+<p class="problem-label">현장 우선주의<br/><span class="text-xs text-gray-500 font-normal">데이터 후순위</span></p>
+</div>
+<div class="problem-card">
+<i class="fas fa-history problem-icon"></i>
+<p class="problem-label">낡은 관행<br/><span class="text-xs text-gray-500 font-normal">경험 의존적</span></p>
+</div>
+<div class="problem-card">
+<i class="fas fa-paper-plane problem-icon"></i>
+<p class="problem-label">일회성 보고<br/><span class="text-xs text-gray-500 font-normal">휘발되는 정보</span></p>
+</div>
+<div class="problem-card">
+<i class="fas fa-server problem-icon" style="color: #cbd5e0;"></i>
+<div class="absolute text-red-500 text-3xl font-bold" style="top: 25%; right: 25%;"><i class="fas fa-ban"></i></div>
+<p class="problem-label">시스템 미활용<br/><span class="text-xs text-gray-500 font-normal">신뢰도 저하</span></p>
+</div>
+</div>
+<div class="absolute -bottom-10 text-center w-full">
+<p class="text-gray-500 text-sm font-medium">데이터 기반 행정의 걸림돌</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>고용노동부의 데이터 문제는 단순히 시스템 문제가 아닙니다. 일하는 방식, 더 깊게는 '인식'의 문제입니다.</li>
+<li>첫째, 현장 중심의 조직문화가 강합니다. 당장의 민원 해결과 현장 단속이 최우선이다 보니, 그 과정을 꼼꼼하게 데이터로 남기는 일은 '부수적인 행정 업무'로 치부되곤 합니다.</li>
+<li>둘째, 당장 사고가 나지 않으면 데이터 부실을 문제 삼지 않습니다. 데이터 품질이 나빠도 당장 업무가 돌아가면 넘어가는 것이죠.</li>
+<li>셋째, 가장 큰 문제는 '수기 취합' 관행입니다. 급한 국회 요구자료가 오면 시스템을 열어보는 게 아니라, 전국의 지청에 "엑셀로 언제까지 보내라"고 공문을 보냅니다.</li>
+<li>이러한 방식은 데이터가 시스템에 축적되는 것을 막고, 담당자의 피로도만 높이는 악순환을 만듭니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 일하는 방식의 문제: 프로세스</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.25rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        /* Two Column Layout */
+        .two-column-container {
+            display: flex;
+            flex: 1;
+            gap: 2rem;
+            position: relative;
+        }
+
+        /* Center Divider Icon - Arrow for Process */
+        .center-divider {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: #e53e3e; /* Red for problem/impact connection */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            z-index: 10;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 4px solid white;
+        }
+
+        /* Column Styles */
+        .column-box {
+            flex: 1;
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .left-column {
+            background-color: #fff5f5; /* Light Red */
+            border-top: 8px solid #fc8181; /* Red */
+        }
+
+        .right-column {
+            background-color: #fffaf0; /* Light Orange */
+            border-top: 8px solid #f6ad55; /* Orange */
+        }
+
+        .col-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid rgba(0,0,0,0.05);
+            padding-bottom: 1rem;
+        }
+
+        .col-icon {
+            font-size: 2.5rem;
+            margin-right: 1rem;
+        }
+        
+        .left-column .col-icon { color: #fc8181; }
+        .right-column .col-icon { color: #f6ad55; }
+
+        .col-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #2d3748;
+        }
+
+        .col-subtitle {
+            font-size: 1rem;
+            color: #718096;
+            margin-top: 0.2rem;
+            font-weight: 500;
+        }
+
+        /* List Items */
+        .list-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .list-item {
+            background-color: white;
+            padding: 1rem 1.2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .item-icon {
+            margin-top: 0.2rem;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .left-column .item-icon { color: #fc8181; }
+        .right-column .item-icon { color: #f6ad55; }
+
+        .item-content {
+            flex: 1;
+        }
+
+        .item-title {
+            font-weight: 700;
+            color: #2d3748;
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .item-desc {
+            color: #4a5568;
+            font-size: 0.95rem;
+            line-height: 1.3;
+        }
+        
+        /* Background Icons */
+        .bg-icon {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            font-size: 10rem;
+            opacity: 0.05;
+            pointer-events: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">일하는 방식의 문제: 프로세스</h1>
+<p class="sub-title">현재의 업무 관행이 가져오는 데이터 품질 문제와 파급효과</p>
+</div>
+<div class="two-column-container">
+<div class="center-divider">
+<i class="fas fa-arrow-right"></i>
+</div>
+<!-- Left Column: Current Process -->
+<div class="column-box left-column">
+<i class="fas fa-keyboard bg-icon"></i>
+<div class="col-header">
+<div class="col-icon">
+<i class="fas fa-file-excel"></i>
+</div>
+<div>
+<p class="col-title">현재 방식 (AS-IS)</p>
+<p class="col-subtitle">수작업 중심의 비효율적 프로세스</p>
+</div>
+</div>
+<div class="list-container">
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-table"></i></div>
+<div class="item-content">
+<p class="item-title">엑셀 중심 생산/관리</p>
+<p class="item-desc">시스템 대신 개인 PC의 엑셀 파일로 주요 데이터 관리</p>
+</div>
+</div>
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-envelope-open-text"></i></div>
+<div class="item-content">
+<p class="item-title">공문·메일 수기 집계</p>
+<p class="item-desc">필요할 때마다 담당자가 일일이 취합하여 현황 파악</p>
+</div>
+</div>
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-folder-open"></i></div>
+<div class="item-content">
+<p class="item-title">개인/부서 단위 파일 보관</p>
+<p class="item-desc">담당자가 바뀌면 데이터의 맥락이 끊기거나 유실됨</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Impact/Problem -->
+<div class="column-box right-column">
+<i class="fas fa-exclamation-triangle bg-icon"></i>
+<div class="col-header">
+<div class="col-icon">
+<i class="fas fa-bug"></i>
+</div>
+<div>
+<p class="col-title">파급 효과 (Impact)</p>
+<p class="col-subtitle">데이터 품질 저하와 활용 한계</p>
+</div>
+</div>
+<div class="list-container">
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-history"></i></div>
+<div class="item-content">
+<p class="item-title">이력·신뢰성 한계</p>
+<p class="item-desc">누가 언제 수정했는지 알 수 없고, 데이터 정합성 검증 불가</p>
+</div>
+</div>
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-hourglass-half"></i></div>
+<div class="item-content">
+<p class="item-title">중복·누락·지연 발생</p>
+<p class="item-desc">같은 데이터를 여러 곳에서 중복 관리하거나, 취합에 시간 소요</p>
+</div>
+</div>
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-unlink"></i></div>
+<div class="item-content">
+<p class="item-title">연계·재사용 어려움</p>
+<p class="item-desc">표준이 없어 다른 데이터와 결합하거나 분석에 활용하기 힘듦</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>고용노동부뿐만 아니라 많은 조직에서 겪고 있는 문제입니다.</li>
+<li>왼쪽을 보시면, 여전히 많은 중요한 데이터가 '엑셀'로 생산되고, '이메일'로 유통됩니다.</li>
+<li>시스템이 있어도 불편하다는 이유로 엑셀을 따로 관리하기도 합니다.</li>
+<li>이런 방식은 오른쪽과 같은 심각한 문제를 낳습니다.</li>
+<li>첫째, 데이터의 '족보'가 사라집니다. 수식이 깨지거나 누군가 실수로 숫자를 바꿔도 알 수가 없죠.</li>
+<li>둘째, 매번 취합하느라 행정력이 낭비됩니다.</li>
+<li>셋째, 가장 중요한 점인데, 이렇게 만든 데이터는 '일회용'으로 끝나버립니다. 다른 데이터와 붙여서 새로운 통찰을 얻기가 불가능합니다.</li>
+<li>결국 '시스템 전환'과 '표준 준수'가 불편해 보이지만, 장기적으로는 유일한 해결책입니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 참여활동 3</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .activity-badge {
+            background-color: #38b2ac; /* Mint */
+            color: white;
+            font-weight: 700;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            margin-right: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(56, 178, 172, 0.4);
+        }
+        .main-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a365d;
+        }
+        
+        /* Activity Content Layout */
+        .activity-container {
+            display: flex;
+            flex: 1;
+            gap: 3rem;
+        }
+        
+        /* Left: Question Area */
+        .question-box {
+            flex: 1;
+            background-color: #ebf8ff; /* Light Blue */
+            border-radius: 1rem;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            border-left: 8px solid #3182ce;
+        }
+        
+        .question-icon {
+            font-size: 3rem;
+            color: #3182ce;
+            margin-bottom: 1.5rem;
+        }
+        
+        .question-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c5282;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+        }
+        
+        .question-sub {
+            font-size: 1.2rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        /* Right: Memo Area */
+        .memo-box {
+            flex: 1.2;
+            background-color: #fff;
+            border: 2px dashed #cbd5e0;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            position: relative;
+            /* Removed radial-gradient as per instructions */
+            background-color: #f8fafc;
+        }
+        
+        .memo-label {
+            position: absolute;
+            top: -15px;
+            left: 30px;
+            background-color: #fff;
+            padding: 0 10px;
+            color: #718096;
+            font-weight: 700;
+            font-size: 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+        }
+        
+        .memo-lines {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-top: 1rem;
+        }
+        
+        .memo-line {
+            border-bottom: 2px solid #e2e8f0;
+            height: 40px;
+            width: 100%;
+        }
+        
+        .handwriting-hint {
+            font-family: 'Nanum Pen Script', cursive;
+            color: #a0aec0;
+            font-size: 2.2rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-5deg);
+            opacity: 0.6;
+            pointer-events: none;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* Time & Instruction */
+        .instruction-bar {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f7fafc;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .timer-info {
+            display: flex;
+            align-items: center;
+            color: #e53e3e; /* Red for timer */
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .action-info {
+            color: #4a5568;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<span class="activity-badge">Activity 03</span>
+<h1 class="main-title">우리 조직은?</h1>
+</div>
+<div class="activity-container">
+<!-- Left: Question -->
+<div class="question-box">
+<div class="question-icon">
+<i class="fas fa-search-location"></i>
+</div>
+<p class="question-text">우리 팀의 데이터는<br/>어디에, 어떻게 저장되나요?</p>
+<div class="question-sub">
+<p><i class="fas fa-question-circle text-blue-500 mr-2"></i>개인 PC 폴더에만 있는가?</p>
+<p><i class="fas fa-question-circle text-blue-500 mr-2"></i>공용 서버나 시스템에 있는가?</p>
+<p><i class="fas fa-question-circle text-blue-500 mr-2"></i>표준 정의나 설명서가 있는가?</p>
+</div>
+</div>
+<!-- Right: Memo -->
+<div class="memo-box">
+<span class="memo-label"><i class="fas fa-pencil-alt mr-2"></i>가장 시급한 문제점 1가지 적기</span>
+<div class="handwriting-hint">개선이 필요한 점은?</div>
+<div class="memo-lines">
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+</div>
+</div>
+</div>
+<div class="instruction-bar">
+<div class="timer-info">
+<i class="fas fa-stopwatch mr-2"></i> 소요시간: 2분
+            </div>
+<div class="action-info">
+<i class="fas fa-comment-dots mr-2"></i> '어디 있는지 모른다', '담당자만 안다' 같은 솔직한 문제점을 적어보세요.
+            </div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>자, 이제 우리 조직의 이야기로 돌아와 봅시다.</li>
+<li>앞서 고용노동부 데이터 관리의 문제점으로 '분산 관리', '개인 PC 보관', '표준 부재'를 이야기했습니다.</li>
+<li>우리 팀은 어떤가요? 내가 휴가를 가면 내 업무 데이터를 동료가 바로 찾아서 쓸 수 있나요?</li>
+<li>'그 파일 김주무관님 PC 바탕화면에 있어요'라는 말이 나온다면 문제입니다.</li>
+<li>우리 조직 데이터 관리에서 가장 시급하게 개선해야 할 점 1가지만 적어보세요.</li>
+<li>(활동 후) 네, 적어주신 문제점들이 바로 다음 강의에서 다룰 '데이터 관리 체계'가 필요한 이유입니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 현업 요약 3</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-accent-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 24px;
+            background-color: #1a365d; /* Navy */
+            z-index: 10;
+        }
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 8rem;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0f4f8' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        /* Summary Box Styling */
+        .summary-box {
+            position: relative;
+            background-color: #ebf8ff; /* Light Blue/Mint tint */
+            border: 2px solid #38b2ac; /* Mint */
+            border-radius: 1.5rem;
+            padding: 4rem 6rem;
+            max-width: 1000px;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            z-index: 1;
+        }
+        
+        .quote-mark {
+            position: absolute;
+            font-family: serif;
+            font-size: 8rem;
+            color: #3182ce; /* Blue */
+            opacity: 0.3;
+            line-height: 1;
+        }
+        
+        .quote-left {
+            top: -2rem;
+            left: 2rem;
+        }
+        
+        .quote-right {
+            bottom: -5rem;
+            right: 2rem;
+        }
+        
+        .main-message {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #1a365d; /* Navy */
+            line-height: 1.4;
+            margin-bottom: 2rem;
+            word-break: keep-all;
+        }
+        
+        .highlight-negative {
+            color: #c53030; /* Red */
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+
+        .highlight-negative::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-color: #feb2b2; /* Red highlight */
+            opacity: 0.5;
+            z-index: -1;
+            transform: skewX(-10deg);
+        }
+        
+        .highlight-positive {
+            color: #2b6cb0; /* Blue */
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        
+        .highlight-positive::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-color: #81e6d9; /* Mint highlight */
+            opacity: 0.5;
+            z-index: -1;
+            transform: skewX(-10deg);
+        }
+        
+        .handwritten-note {
+            position: absolute;
+            bottom: -50px;
+            right: -20px;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 2rem;
+            color: #2b6cb0;
+            transform: rotate(-3deg);
+            background-color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 2px solid #2b6cb0;
+        }
+        
+        .decoration-icon {
+            position: absolute;
+            font-size: 15rem;
+            color: #e2e8f0;
+            opacity: 0.4;
+            z-index: 0;
+            right: -5rem;
+            top: -5rem;
+            transform: rotate(15deg);
+        }
+
+        .solution-badge {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            color: #2c5282;
+            background-color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            border: 1px solid #bee3f8;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Accent Bar -->
+<div class="bg-accent-bar"></div>
+<!-- Content Area -->
+<div class="content-area">
+<!-- Background Decoration -->
+<i class="fas fa-database decoration-icon"></i>
+<div class="summary-box">
+<div class="quote-mark quote-left">“</div>
+<p class="text-mint-600 font-bold uppercase tracking-wider mb-4" style="color: #38b2ac;">Key Takeaway</p>
+<p class="main-message">
+                    ‘<span class="highlight-negative">엑셀 중심·수기 취합</span>’은 한계가 명확합니다.<br/>
+<span class="highlight-positive">표준·메타데이터·전담조직</span>이<br/>
+                    데이터 문제 해결의 시작점입니다.
+                </p>
+<div class="mt-8 flex justify-center flex-wrap gap-4">
+<div class="solution-badge">
+<i class="fas fa-ruler-combined text-blue-500 mr-2"></i> 데이터 표준
+                    </div>
+<div class="solution-badge">
+<i class="fas fa-tags text-blue-500 mr-2"></i> 메타데이터
+                    </div>
+<div class="solution-badge">
+<i class="fas fa-users-cog text-blue-500 mr-2"></i> 전담 조직
+                    </div>
+</div>
+<div class="quote-mark quote-right">”</div>
+<div class="handwritten-note">
+<p>시스템으로 일하는 문화 만들기!</p>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>현업 데이터 관리의 현실을 직시하고 해결책을 정리해 보겠습니다.</li>
+<li>우리가 익숙하게 사용하는 엑셀과 수기 취합 방식은 편리해 보이지만, 데이터의 신뢰성과 활용성을 떨어뜨리는 주범입니다.</li>
+<li>이 문제를 해결하기 위해서는 개인의 노력이 아닌 시스템적 접근이 필요합니다.</li>
+<li>첫째, 데이터를 정의하는 표준이 있어야 하고, 둘째, 데이터에 대한 데이터인 메타데이터가 관리되어야 하며, 셋째, 이를 책임지고 관리할 전담 조직이 필요합니다.</li>
+<li>이 3가지가 갖춰질 때 비로소 우리 조직의 데이터는 자산이 될 수 있습니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 오늘의 핵심 정리</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .title-area::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #38b2ac; /* Mint */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            width: 100%;
+            padding-right: 2rem;
+        }
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #38b2ac; /* Mint accent */
+            transition: transform 0.2s;
+        }
+        .bullet-item:hover {
+            transform: translateX(5px);
+            background-color: #f7fafc;
+        }
+        .bullet-icon {
+            color: #38b2ac;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.25rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .bullet-content {
+            flex: 1;
+        }
+        .bullet-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.4rem;
+        }
+        .bullet-desc {
+            font-size: 1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #2c5282;
+            font-weight: 700;
+            background-color: #ebf8ff;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .side-visual {
+            position: absolute;
+            right: 5rem;
+            top: 55%;
+            transform: translateY(-50%);
+            width: 380px;
+            height: 380px;
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #cbd5e0;
+            z-index: 0;
+            padding: 1rem;
+        }
+        .main-content {
+            width: 60%;
+            z-index: 1;
+        }
+        .summary-icon {
+            font-size: 4rem;
+            color: #38b2ac;
+            margin-bottom: 1.5rem;
+        }
+        .summary-message {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2d3748;
+            text-align: center;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<p class="sub-title">Wrap-up. 오늘의 핵심 정리</p>
+<h1 class="main-title">이번 시간에 배운 내용</h1>
+</div>
+<div class="flex h-full relative">
+<!-- Main Bullet Content -->
+<div class="main-content bullet-list">
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-layer-group"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">데이터는 출발점이다 (DIKW)</p>
+<p class="bullet-desc">
+                                데이터는 가장 기초적인 자료이며, 가공과 분석을 거쳐 정보, 지식, 지혜로 발전할 때 진정한 가치가 생깁니다. <span class="highlight-text">기록만으로는 부족합니다.</span>
+</p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-star"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">쓸모있는 데이터의 3가지 조건</p>
+<p class="bullet-desc">
+                                1) 현실을 왜곡하지 않아야 하고(정확성), 2) 의사결정에 활용할 수 있어야 하며(목적성), 3) 사용하기 쉬워야 합니다(접근성).
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-chart-line"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">데이터 기반 의사결정의 공식</p>
+<p class="bullet-desc">
+                                좋은 <span class="highlight-text">데이터</span>(입력)와 명확한 <span class="highlight-text">판단 기준</span>(평가), 그리고 이를 통한 반복적인 학습이 합리적인 결정을 만듭니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-building"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">고용노동부 데이터의 과제</p>
+<p class="bullet-desc">
+                                양적인 데이터(Volume)는 충분하지만, 질적 관리(Quality)와 프로세스 개선이 필요합니다. <span class="highlight-text">통합 관리와 표준화</span>가 시급합니다.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Side Visual -->
+<div class="side-visual">
+<i class="fas fa-check-circle summary-icon"></i>
+<p class="summary-message">
+                    "데이터는 쌓아두는 것이 아니라<br/>
+                    쓰기 위해 관리하는 것입니다."
+                </p>
+<div class="mt-6 w-full px-6">
+<div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+<span>데이터</span>
+<span>의사결정</span>
+</div>
+<div class="w-full bg-gray-200 rounded-full h-2.5">
+<div class="bg-blue-600 h-2.5 rounded-full" style="width: 100%"></div>
+</div>
+<p class="text-center text-xs text-gray-400 mt-2">Data-Driven Decision Making</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>오늘 50분 동안 다룬 내용을 4가지로 요약해보겠습니다.</li>
+<li>첫째, 데이터는 그 자체로 목적이 아니라 출발점입니다. DIKW 피라미드의 가장 아래에 있죠. 가공되지 않으면 그저 숫자에 불과합니다.</li>
+<li>둘째, 좋은 데이터란 '정확하고, 목적에 맞고, 쓰기 쉬워야' 합니다. 이 3가지 중 하나라도 빠지면 쓸모없는 데이터가 됩니다.</li>
+<li>셋째, 데이터 기반 의사결정은 데이터와 기준이 만날 때 가능합니다. 그리고 반복을 통해 개선해 나가는 과정이 중요합니다.</li>
+<li>마지막으로 우리 부처의 현실을 봤을 때, 데이터의 양은 충분하지만 질적 관리와 일하는 방식의 개선이 필요하다는 점을 확인했습니다.</li>
+<li>결국 데이터는 쌓아두는 것이 아니라, 쓰기 위해 관리해야 한다는 점을 기억해주시기 바랍니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 다음 강 예고</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.25rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        /* Next Steps Container */
+        .next-steps-container {
+            flex: 1;
+            display: flex;
+            gap: 2rem;
+            padding: 1rem 0 2rem 0;
+        }
+
+        /* Next Lecture Topic (Left) */
+        .next-topic-box {
+            flex: 1.2;
+            background-color: #2c5282;
+            border-radius: 1.5rem;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .topic-label {
+            color: #63b3ed;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .topic-title {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 2rem;
+        }
+
+        .topic-list {
+            color: #e2e8f0;
+            font-size: 1.1rem;
+        }
+
+        .topic-item {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .topic-bg-icon {
+            position: absolute;
+            bottom: -2rem;
+            right: -2rem;
+            font-size: 15rem;
+            color: white;
+            opacity: 0.05;
+        }
+
+        /* Right Side: Preparation & Assignment */
+        .right-side-container {
+            flex: 0.8;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .info-box {
+            flex: 1;
+            background-color: white;
+            border-radius: 1rem;
+            padding: 1.5rem 2rem;
+            border: 2px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-5px);
+            border-color: #38b2ac;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .prep-box {
+            background-color: #f0fff4;
+            border-color: #38b2ac;
+        }
+
+        .assignment-box {
+            background-color: #fffaf0;
+            border-color: #ed8936;
+        }
+
+        .box-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .box-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .prep-box .box-icon { background-color: #38b2ac; }
+        .assignment-box .box-icon { background-color: #ed8936; }
+
+        .box-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d3748;
+        }
+
+        .box-content {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.5;
+            padding-left: 3.5rem;
+        }
+
+        .arrow-indicator {
+            position: absolute;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 3rem;
+            color: #cbd5e0;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">다음 강의 안내</h1>
+<p class="sub-title">오늘 배운 개념을 실무에 적용하기 위한 다음 단계</p>
+</div>
+<div class="next-steps-container">
+<!-- Next Lecture Topic -->
+<div class="next-topic-box">
+<i class="fas fa-chalkboard-teacher topic-bg-icon"></i>
+<p class="topic-label"><i class="fas fa-forward mr-2"></i> NEXT LESSON</p>
+<h2 class="topic-title">데이터를 생산하고<br/>관리하는 방식</h2>
+<div class="topic-list">
+<div class="topic-item">
+<i class="fas fa-check-circle text-blue-300 mr-3"></i>
+<span>데이터 표준과 메타데이터의 중요성</span>
+</div>
+<div class="topic-item">
+<i class="fas fa-check-circle text-blue-300 mr-3"></i>
+<span>데이터 품질관리와 거버넌스</span>
+</div>
+<div class="topic-item">
+<i class="fas fa-check-circle text-blue-300 mr-3"></i>
+<span>실무 엑셀 데이터 관리 팁</span>
+</div>
+</div>
+</div>
+<!-- Right Side: Prep & Task -->
+<div class="right-side-container">
+<!-- Preparation -->
+<div class="info-box prep-box">
+<div class="box-header">
+<div class="box-icon">
+<i class="fas fa-tools"></i>
+</div>
+<h3 class="box-title">다음 시간 준비물</h3>
+</div>
+<div class="box-content">
+<p>우리 조직(팀/과)에 <strong>'데이터 사전(정의집)'</strong>이나 <strong>'업무 매뉴얼'</strong>이 있는지 확인해 오기</p>
+</div>
+</div>
+<!-- Assignment -->
+<div class="info-box assignment-box">
+<div class="box-header">
+<div class="box-icon">
+<i class="fas fa-pencil-alt"></i>
+</div>
+<h3 class="box-title">간단 과제</h3>
+</div>
+<div class="box-content">
+<p>내가 자주 쓰는 <strong>데이터 1종을 선정</strong>하여, 그 데이터의 정의, 관리 담당자, 갱신 주기를 메모해 오기</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>오늘 '데이터란 무엇인가', 그리고 '왜 중요한가'에 대해 이야기 나눴습니다.</li>
+<li>다음 시간에는 조금 더 구체적인 '방법론'으로 들어갑니다.</li>
+<li>우리가 매일 만드는 엑셀 파일, 보고서 데이터를 어떻게 하면 '자산'으로 만들 수 있을지, '데이터 생산과 관리 방식'에 대해 다루겠습니다.</li>
+<li>오실 때 빈손으로 오지 마시고, 우리 팀에는 어떤 데이터 규칙이 있는지, '데이터 사전' 같은 게 있는지 한번 찾아보시기 바랍니다.</li>
+<li>그리고 본인이 가장 많이 쓰는 데이터 딱 하나만 골라서, 이게 도대체 뭔지 정의해보고 누가 관리하는지 적어와 주시면 실습에 큰 도움이 될 겁니다.</li>
+<li>수고하셨습니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - Q&amp;A</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: radial-gradient(circle at 10% 20%, rgba(56, 178, 172, 0.05) 0%, rgba(255, 255, 255, 0) 20%), 
+                              radial-gradient(circle at 90% 80%, rgba(26, 54, 93, 0.05) 0%, rgba(255, 255, 255, 0) 20%);
+        }
+        
+        /* Main Q&A Design */
+        .qna-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .qna-title-wrapper {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .qna-main-title {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #1a365d;
+            line-height: 1;
+            letter-spacing: -0.05em;
+            position: relative;
+            z-index: 2;
+        }
+
+        .qna-subtitle {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #38b2ac; /* Mint */
+            text-align: center;
+            margin-top: -1rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        .qna-icon {
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            font-size: 6rem;
+            color: #e6fffa;
+            z-index: 1;
+            transform: rotate(15deg);
+        }
+
+        /* Question Guide Box */
+        .question-guide-box {
+            background-color: white;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            width: 100%;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+            border: 1px solid #e2e8f0;
+            position: relative;
+        }
+
+        .guide-label {
+            position: absolute;
+            top: -1.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #2c5282;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .questions-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .question-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 1rem;
+            background-color: #f7fafc;
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .question-item:hover {
+            background-color: #ebf8ff;
+            transform: translateX(10px);
+        }
+
+        .question-icon {
+            background-color: #3182ce;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .question-text {
+            font-size: 1.2rem;
+            color: #4a5568;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-top: 0.2rem;
+        }
+
+        .contact-info {
+            margin-top: 3rem;
+            text-align: center;
+            color: #718096;
+            font-size: 1rem;
+        }
+
+        /* Decorative Elements */
+        .decor-circle {
+            position: absolute;
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(56, 178, 172, 0.05);
+            top: -50px;
+            left: -50px;
+        }
+        
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(49, 130, 206, 0.05);
+            bottom: -50px;
+            right: -50px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<!-- Decorative Background -->
+<div class="decor-circle circle-1"></div>
+<div class="decor-circle circle-2"></div>
+<div class="content-wrapper">
+<div class="qna-container">
+<div class="qna-title-wrapper">
+<i class="fas fa-comments qna-icon"></i>
+<h1 class="qna-main-title">Q&amp;A</h1>
+<p class="qna-subtitle">질의 응답</p>
+</div>
+<div class="question-guide-box">
+<div class="guide-label">어떤 질문이든 환영합니다</div>
+<div class="questions-list">
+<div class="question-item">
+<div class="question-icon">
+<i class="fas fa-question"></i>
+</div>
+<p class="question-text">오늘 배운 내용 중 가장 이해하기 어려웠던 부분은 무엇인가요?</p>
+</div>
+<div class="question-item">
+<div class="question-icon">
+<i class="fas fa-building"></i>
+</div>
+<p class="question-text">우리 조직에 적용하려고 할 때 가장 큰 장애물은 무엇일까요?</p>
+</div>
+</div>
+</div>
+<div class="contact-info">
+<p>추가적인 문의사항은 메일이나 메신저로 언제든 연락주세요.</p>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>오늘 긴 시간 동안 데이터의 개념부터 의사결정, 그리고 우리 부처의 현황까지 함께 살펴봤습니다.</li>
+<li>혹시 들으시면서 궁금했던 점이나, 평소 업무 하시면서 데이터 때문에 답답했던 점이 있으시면 편하게 말씀해 주시기 바랍니다.</li>
+<li>특히 '우리 부서 데이터는 이래서 안 돼'라던가, '이런 건 어떻게 해결해야 하나요?' 같은 현장의 목소리가 가장 중요합니다.</li>
+<li>(질문이 없을 경우) 만약 당장 떠오르는 게 없으시다면, 오늘 돌아가셔서 업무 보실 때 '이게 데이터인가?' 한번 생각해보시는 것만으로도 충분합니다.</li>
+<li>감사합니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

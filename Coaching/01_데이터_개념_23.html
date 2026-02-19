@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 
 <html lang="ko">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>제1강 데이터 - Q&amp;A</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>제1강 데이터 - Q&amp;A</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
         body {
             margin: 0;
             padding: 0;
             background-color: #f3f4f6;
             font-family: 'Noto Sans KR', sans-serif;
         }
+
         .slide-container {
             width: 1280px;
             height: 720px;
@@ -24,11 +27,14 @@
             display: flex;
             flex-direction: column;
         }
+
         .header-bar {
-            background-color: #1a365d; /* Navy */
+            background-color: #1a365d;
+            /* Navy */
             height: 12px;
             width: 100%;
         }
+
         .content-wrapper {
             flex: 1;
             padding: 3rem 4rem;
@@ -36,10 +42,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-image: radial-gradient(circle at 10% 20%, rgba(56, 178, 172, 0.05) 0%, rgba(255, 255, 255, 0) 20%), 
-                              radial-gradient(circle at 90% 80%, rgba(26, 54, 93, 0.05) 0%, rgba(255, 255, 255, 0) 20%);
+            background-image: radial-gradient(circle at 10% 20%, rgba(56, 178, 172, 0.05) 0%, rgba(255, 255, 255, 0) 20%),
+                radial-gradient(circle at 90% 80%, rgba(26, 54, 93, 0.05) 0%, rgba(255, 255, 255, 0) 20%);
         }
-        
+
         /* Main Q&A Design */
         .qna-container {
             display: flex;
@@ -67,7 +73,8 @@
         .qna-subtitle {
             font-size: 2rem;
             font-weight: 300;
-            color: #38b2ac; /* Mint */
+            color: #38b2ac;
+            /* Mint */
             text-align: center;
             margin-top: -1rem;
             letter-spacing: 0.2em;
@@ -106,7 +113,7 @@
             border-radius: 2rem;
             font-weight: 700;
             font-size: 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .questions-list {
@@ -164,7 +171,7 @@
             border-radius: 50%;
             z-index: 0;
         }
-        
+
         .circle-1 {
             width: 300px;
             height: 300px;
@@ -172,7 +179,7 @@
             top: -50px;
             left: -50px;
         }
-        
+
         .circle-2 {
             width: 200px;
             height: 200px;
@@ -180,55 +187,56 @@
             bottom: -50px;
             right: -50px;
         }
-
     </style>
 </head>
+
 <body>
-<div class="slide-container">
-<div class="header-bar"></div>
-<!-- Decorative Background -->
-<div class="decor-circle circle-1"></div>
-<div class="decor-circle circle-2"></div>
-<div class="content-wrapper">
-<div class="qna-container">
-<div class="qna-title-wrapper">
-<i class="fas fa-comments qna-icon"></i>
-<h1 class="qna-main-title">Q&amp;A</h1>
-<p class="qna-subtitle">질의 응답</p>
-</div>
-<div class="question-guide-box">
-<div class="guide-label">어떤 질문이든 환영합니다</div>
-<div class="questions-list">
-<div class="question-item">
-<div class="question-icon">
-<i class="fas fa-question"></i>
-</div>
-<p class="question-text">오늘 배운 내용 중 가장 이해하기 어려웠던 부분은 무엇인가요?</p>
-</div>
-<div class="question-item">
-<div class="question-icon">
-<i class="fas fa-building"></i>
-</div>
-<p class="question-text">우리 조직에 적용하려고 할 때 가장 큰 장애물은 무엇일까요?</p>
-</div>
-</div>
-</div>
-<div class="contact-info">
-<p>추가적인 문의사항은 메일이나 메신저로 언제든 연락주세요.</p>
-</div>
-</div>
-</div>
-<!-- Speaker Notes -->
-<div class="hidden">
-<h3>발표자 노트</h3>
-<ul>
-<li>오늘 긴 시간 동안 데이터의 개념부터 의사결정, 그리고 우리 부처의 현황까지 함께 살펴봤습니다.</li>
-<li>혹시 들으시면서 궁금했던 점이나, 평소 업무 하시면서 데이터 때문에 답답했던 점이 있으시면 편하게 말씀해 주시기 바랍니다.</li>
-<li>특히 '우리 부서 데이터는 이래서 안 돼'라던가, '이런 건 어떻게 해결해야 하나요?' 같은 현장의 목소리가 가장 중요합니다.</li>
-<li>(질문이 없을 경우) 만약 당장 떠오르는 게 없으시다면, 오늘 돌아가셔서 업무 보실 때 '이게 데이터인가?' 한번 생각해보시는 것만으로도 충분합니다.</li>
-<li>감사합니다.</li>
-</ul>
-</div>
-</div>
+    <div class="slide-container">
+        <div class="header-bar"></div>
+        <!-- Decorative Background -->
+        <div class="decor-circle circle-1"></div>
+        <div class="decor-circle circle-2"></div>
+        <div class="content-wrapper">
+            <div class="qna-container">
+                <div class="qna-title-wrapper">
+                    <i class="fas fa-comments qna-icon"></i>
+                    <h1 class="qna-main-title">Q&amp;A</h1>
+                    <p class="qna-subtitle">질의 응답</p>
+                </div>
+                <div class="question-guide-box">
+                    <div class="guide-label">어떤 질문이든 환영합니다</div>
+                    <div class="questions-list">
+                        <div class="question-item">
+                            <div class="question-icon">
+                                <i class="fas fa-question"></i>
+                            </div>
+                            <p class="question-text">오늘 배운 내용 중 가장 이해하기 어려웠던 부분은 무엇인가요?</p>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <p class="question-text">우리 조직에 적용하려고 할 때 가장 큰 장애물은 무엇일까요?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <p>추가적인 문의사항은 메일이나 메신저로 언제든 연락주세요.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Speaker Notes -->
+        <div class="hidden">
+            <h3>발표자 노트</h3>
+            <ul>
+                <li>오늘 긴 시간 동안 데이터의 개념부터 의사결정, 그리고 우리 부처의 현황까지 함께 살펴봤습니다.</li>
+                <li>혹시 들으시면서 궁금했던 점이나, 평소 업무 하시면서 데이터 때문에 답답했던 점이 있으시면 편하게 말씀해 주시기 바랍니다.</li>
+                <li>특히 '우리 부서 데이터는 이래서 안 돼'라던가, '이런 건 어떻게 해결해야 하나요?' 같은 현장의 목소리가 가장 중요합니다.</li>
+                <li>(질문이 없을 경우) 만약 당장 떠오르는 게 없으시다면, 오늘 돌아가셔서 업무 보실 때 '이게 데이터인가?' 한번 생각해보시는 것만으로도 충분합니다.</li>
+                <li>감사합니다.</li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 데이터 기반 의사결정의 필요성</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .title-area::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #38b2ac; /* Mint */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #38b2ac; /* Mint accent */
+            transition: transform 0.2s;
+        }
+        .bullet-item:hover {
+            transform: translateX(5px);
+            background-color: #f7fafc;
+        }
+        .bullet-icon {
+            color: #38b2ac;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.25rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .bullet-content {
+            flex: 1;
+        }
+        .bullet-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        .bullet-desc {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #2c5282;
+            font-weight: 700;
+            background-color: #ebf8ff;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .side-visual {
+            position: absolute;
+            right: 5rem;
+            top: 55%;
+            transform: translateY(-50%);
+            width: 420px;
+            height: 420px;
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #cbd5e0;
+            z-index: 0;
+            flex-direction: column;
+        }
+        .main-content {
+            width: 60%;
+            z-index: 1;
+        }
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #3182ce;
+        }
+        .chart-container {
+            width: 350px;
+            height: 350px;
+            position: relative;
+        }
+        .benefit-label {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<p class="sub-title">Chapter 2. 데이터 기반 의사결정</p>
+<h1 class="main-title">왜 데이터 기반 의사결정인가?</h1>
+</div>
+<div class="flex h-full relative">
+<!-- Main Bullet Content -->
+<div class="main-content bullet-list">
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-history"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">반복 학습: 과거로부터의 개선</p>
+<p class="bullet-desc">
+                                의사결정은 일회성이 아니라 <span class="highlight-text">반복되는 과정</span>입니다.<br/>
+                                과거의 데이터를 분석해서 미래의 의사결정을 합리적으로 개선할 수 있습니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-chart-line"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">불확실성 축소: 직관에서 근거로</p>
+<p class="bullet-desc">
+                                결과를 미리 알 수는 없지만, 데이터는 <span class="highlight-text">불확실성을 줄여주는</span> 강력한 도구입니다.<br/>
+                                '감'이나 '경험'에만 의존하던 방식을 객관적 근거 중심으로 전환합니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-bullseye"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">성과 관리: 목표와 지표의 선순환</p>
+<p class="bullet-desc">
+                                성공과 실패를 단순히 느낌으로 판단하지 않고,<br/>
+<span class="highlight-text">명확한 지표</span>를 통해 성과를 측정하고 관리할 수 있게 됩니다.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Side Visual -->
+<div class="side-visual">
+<div class="chart-container">
+<canvas id="decisionChart"></canvas>
+</div>
+<div class="text-center mt-4">
+<p class="text-gray-600 font-medium">데이터 활용 시 성공 확률 변화</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>우리는 살아가면서 수많은 의사결정을 합니다. 업무에서도 마찬가지죠.</li>
+<li>왜 굳이 데이터 기반이어야 할까요? 첫째, 의사결정은 반복되기 때문입니다. 지난번의 데이터를 통해 이번 결정을 더 낫게 만들 수 있죠.</li>
+<li>둘째, 불확실성을 줄여줍니다. 우리가 미래를 완벽히 예측할 순 없지만, 데이터는 안개 속에서 나침반 역할을 해줍니다.</li>
+<li>셋째, 성과 관리가 가능해집니다. '열심히 했다'가 아니라 '데이터로 보니 이만큼 개선되었다'라고 말할 수 있게 됩니다.</li>
+<li>오른쪽 차트는 데이터 활용 여부에 따른 성과 개선의 예시를 보여줍니다. 직관보다 훨씬 높은 성공 확률을 기대할 수 있죠.</li>
+</ul>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+        // Simple Bar Chart Visualization
+        const ctx = document.getElementById('decisionChart').getContext('2d');
+        const decisionChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['직관 기반', '데이터 기반'],
+                datasets: [{
+                    label: '의사결정 성공 확률 (%)',
+                    data: [45, 85],
+                    backgroundColor: [
+                        'rgba(203, 213, 224, 0.8)', // Gray for Intuition
+                        'rgba(56, 178, 172, 0.8)'  // Mint for Data-Driven
+                    ],
+                    borderColor: [
+                        'rgba(160, 174, 192, 1)',
+                        'rgba(49, 151, 149, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        enabled: true
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                animation: {
+                    duration: 1500,
+                    easing: 'easeOutQuart'
+                }
+            }
+        });
+    </script>
+</body>
+</html>

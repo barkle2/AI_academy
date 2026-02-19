@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 양 vs 질 비교표</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 2.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.2rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        /* Comparison Table Container */
+        .comparison-container {
+            display: flex;
+            flex: 1;
+            gap: 2rem;
+            justify-content: center;
+            align-items: stretch;
+            padding: 0 2rem 2rem 2rem;
+        }
+
+        /* Column Styles */
+        .col-box {
+            flex: 1;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border: 1px solid #e2e8f0;
+        }
+
+        .col-header {
+            padding: 1.5rem;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 140px;
+        }
+
+        .col-header-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .col-header-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 0.2rem;
+        }
+        
+        .col-header-subtitle {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+        }
+
+        /* Left Column (Volume) */
+        .left-col .col-header {
+            background-color: #2c5282; /* Navy Blue */
+        }
+        
+        /* Right Column (Quality) */
+        .right-col .col-header {
+            background-color: #38b2ac; /* Mint/Teal */
+        }
+
+        /* Table Content */
+        .table-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            background-color: white;
+        }
+
+        .row-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid #edf2f7;
+            margin-bottom: 0.5rem;
+        }
+        
+        .row-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .row-label {
+            font-weight: 700;
+            width: 80px;
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-right: 1rem;
+            text-align: center;
+            background-color: #f7fafc;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .row-text {
+            flex: 1;
+        }
+        
+        .row-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.2rem;
+        }
+        
+        .row-desc {
+            font-size: 0.95rem;
+            color: #718096;
+            line-height: 1.4;
+        }
+
+        /* VS Badge */
+        .vs-badge {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: #e53e3e;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.5rem;
+            border: 4px solid white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+        /* Check/Cross Icons */
+        .status-icon {
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .icon-good { color: #38b2ac; }
+        .icon-bad { color: #e53e3e; }
+        .icon-neutral { color: #ecc94b; }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">양(Quantity) vs 질(Quality): 무엇이 더 중요한가?</h1>
+<p class="sub-title">데이터의 축적을 넘어 가치 창출로 나아가기 위한 비교</p>
+</div>
+<div class="comparison-container">
+<!-- Left Column: Volume -->
+<div class="col-box left-col">
+<div class="col-header">
+<div class="col-header-icon">
+<i class="fas fa-layer-group"></i>
+</div>
+<p class="col-header-title">양(Volume)</p>
+<p class="col-header-subtitle">폭넓은 커버리지와 축적</p>
+</div>
+<div class="table-content">
+<div class="row-item">
+<div class="row-label">범위</div>
+<div class="row-text">
+<p class="row-title">국민 전체 대상</p>
+<p class="row-desc">전 국민의 고용·노동 생애주기 전반을 포괄</p>
+</div>
+<i class="fas fa-check-circle status-icon icon-good"></i>
+</div>
+<div class="row-item">
+<div class="row-label">다양성</div>
+<div class="row-text">
+<p class="row-title">주제와 형식 풍부</p>
+<p class="row-desc">임금, 안전, 보험 등 다양한 주제와 데이터 형식</p>
+</div>
+<i class="fas fa-check-circle status-icon icon-good"></i>
+</div>
+<div class="row-item">
+<div class="row-label">수집량</div>
+<div class="row-text">
+<p class="row-title">대규모 축적</p>
+<p class="row-desc">오랜 기간 축적된 방대한 행정 데이터 보유</p>
+</div>
+<i class="fas fa-check-circle status-icon icon-good"></i>
+</div>
+</div>
+</div>
+<!-- VS Badge (Positioned absolute relative to container via JS or just overlapping visually if container is relative. Here using layout trick) -->
+<div style="position: relative; width: 0;">
+<div class="vs-badge">VS</div>
+</div>
+<!-- Right Column: Quality -->
+<div class="col-box right-col">
+<div class="col-header">
+<div class="col-header-icon">
+<i class="fas fa-gem"></i>
+</div>
+<p class="col-header-title">질(Quality)</p>
+<p class="col-header-subtitle">신뢰도와 실제 활용성</p>
+</div>
+<div class="table-content">
+<div class="row-item">
+<div class="row-label">접근성</div>
+<div class="row-text">
+<p class="row-title">표준·권한·보안</p>
+<p class="row-desc">부서 칸막이와 보안 규정으로 접근 제한적</p>
+</div>
+<i class="fas fa-exclamation-triangle status-icon icon-neutral"></i>
+</div>
+<div class="row-item">
+<div class="row-label">연계성</div>
+<div class="row-text">
+<p class="row-title">메타데이터 부재</p>
+<p class="row-desc">공통 키 부족으로 시스템 간 데이터 결합 곤란</p>
+</div>
+<i class="fas fa-times-circle status-icon icon-bad"></i>
+</div>
+<div class="row-item">
+<div class="row-label">신뢰성</div>
+<div class="row-text">
+<p class="row-title">이력 및 검증 미흡</p>
+<p class="row-desc">수기 입력 오류, 업데이트 지연 등 품질 이슈</p>
+</div>
+<i class="fas fa-times-circle status-icon icon-bad"></i>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>우리가 가진 자산을 냉정하게 비교해 보겠습니다.</li>
+<li>왼쪽의 '양'적인 측면에서는 매우 훌륭합니다. 국민 전체를 커버하고, 주제도 다양하며, 오랫동안 쌓아온 데이터가 많습니다.</li>
+<li>하지만 오른쪽의 '질'적인 측면, 즉 데이터를 실제로 써먹으려고 할 때는 문제가 드러납니다.</li>
+<li>접근하기 어렵고(접근성), 서로 다른 데이터를 합치기 어려우며(연계성), 믿고 써도 되는지(신뢰성) 확신하기 어려울 때가 있습니다.</li>
+<li>진정한 데이터 강국, 데이터 기반 행정은 '양'에서 '질'로의 전환이 필요합니다.</li>
+<li>쌓아두는 것(Storing)을 넘어 활용하는 것(Using)에 초점을 맞춰야 합니다.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

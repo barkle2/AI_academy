@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 참여활동 3</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .activity-badge {
+            background-color: #38b2ac; /* Mint */
+            color: white;
+            font-weight: 700;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            margin-right: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(56, 178, 172, 0.4);
+        }
+        .main-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a365d;
+        }
+        
+        /* Activity Content Layout */
+        .activity-container {
+            display: flex;
+            flex: 1;
+            gap: 3rem;
+        }
+        
+        /* Left: Question Area */
+        .question-box {
+            flex: 1;
+            background-color: #ebf8ff; /* Light Blue */
+            border-radius: 1rem;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            border-left: 8px solid #3182ce;
+        }
+        
+        .question-icon {
+            font-size: 3rem;
+            color: #3182ce;
+            margin-bottom: 1.5rem;
+        }
+        
+        .question-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c5282;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+        }
+        
+        .question-sub {
+            font-size: 1.2rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        /* Right: Memo Area */
+        .memo-box {
+            flex: 1.2;
+            background-color: #fff;
+            border: 2px dashed #cbd5e0;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            position: relative;
+            /* Removed radial-gradient as per instructions */
+            background-color: #f8fafc;
+        }
+        
+        .memo-label {
+            position: absolute;
+            top: -15px;
+            left: 30px;
+            background-color: #fff;
+            padding: 0 10px;
+            color: #718096;
+            font-weight: 700;
+            font-size: 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+        }
+        
+        .memo-lines {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-top: 1rem;
+        }
+        
+        .memo-line {
+            border-bottom: 2px solid #e2e8f0;
+            height: 40px;
+            width: 100%;
+        }
+        
+        .handwriting-hint {
+            font-family: 'Nanum Pen Script', cursive;
+            color: #a0aec0;
+            font-size: 2.2rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-5deg);
+            opacity: 0.6;
+            pointer-events: none;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* Time & Instruction */
+        .instruction-bar {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f7fafc;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .timer-info {
+            display: flex;
+            align-items: center;
+            color: #e53e3e; /* Red for timer */
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .action-info {
+            color: #4a5568;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<span class="activity-badge">Activity 03</span>
+<h1 class="main-title">우리 조직은?</h1>
+</div>
+<div class="activity-container">
+<!-- Left: Question -->
+<div class="question-box">
+<div class="question-icon">
+<i class="fas fa-search-location"></i>
+</div>
+<p class="question-text">우리 팀의 데이터는<br/>어디에, 어떻게 저장되나요?</p>
+<div class="question-sub">
+<p><i class="fas fa-question-circle text-blue-500 mr-2"></i>개인 PC 폴더에만 있는가?</p>
+<p><i class="fas fa-question-circle text-blue-500 mr-2"></i>공용 서버나 시스템에 있는가?</p>
+<p><i class="fas fa-question-circle text-blue-500 mr-2"></i>표준 정의나 설명서가 있는가?</p>
+</div>
+</div>
+<!-- Right: Memo -->
+<div class="memo-box">
+<span class="memo-label"><i class="fas fa-pencil-alt mr-2"></i>가장 시급한 문제점 1가지 적기</span>
+<div class="handwriting-hint">개선이 필요한 점은?</div>
+<div class="memo-lines">
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+</div>
+</div>
+</div>
+<div class="instruction-bar">
+<div class="timer-info">
+<i class="fas fa-stopwatch mr-2"></i> 소요시간: 2분
+            </div>
+<div class="action-info">
+<i class="fas fa-comment-dots mr-2"></i> '어디 있는지 모른다', '담당자만 안다' 같은 솔직한 문제점을 적어보세요.
+            </div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>자, 이제 우리 조직의 이야기로 돌아와 봅시다.</li>
+<li>앞서 고용노동부 데이터 관리의 문제점으로 '분산 관리', '개인 PC 보관', '표준 부재'를 이야기했습니다.</li>
+<li>우리 팀은 어떤가요? 내가 휴가를 가면 내 업무 데이터를 동료가 바로 찾아서 쓸 수 있나요?</li>
+<li>'그 파일 김주무관님 PC 바탕화면에 있어요'라는 말이 나온다면 문제입니다.</li>
+<li>우리 조직 데이터 관리에서 가장 시급하게 개선해야 할 점 1가지만 적어보세요.</li>
+<li>(활동 후) 네, 적어주신 문제점들이 바로 다음 강의에서 다룰 '데이터 관리 체계'가 필요한 이유입니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

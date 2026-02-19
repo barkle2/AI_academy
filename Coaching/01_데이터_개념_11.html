@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 데이터 기반 의사결정 요소</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.25rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        /* Two Column Layout */
+        .two-column-container {
+            display: flex;
+            flex: 1;
+            gap: 2rem;
+            position: relative;
+        }
+
+        /* Center Divider Icon */
+        .center-divider {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: #2d3748;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            z-index: 10;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 4px solid white;
+        }
+
+        /* Column Styles */
+        .column-box {
+            flex: 1;
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .left-column {
+            background-color: #ebf8ff; /* Light Blue */
+            border-top: 8px solid #3182ce; /* Blue */
+        }
+
+        .right-column {
+            background-color: #f0fff4; /* Light Green/Mint */
+            border-top: 8px solid #38b2ac; /* Mint */
+        }
+
+        .col-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid rgba(0,0,0,0.05);
+            padding-bottom: 1rem;
+        }
+
+        .col-icon {
+            font-size: 2.5rem;
+            margin-right: 1rem;
+        }
+        
+        .left-column .col-icon { color: #3182ce; }
+        .right-column .col-icon { color: #38b2ac; }
+
+        .col-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #2d3748;
+        }
+
+        .col-subtitle {
+            font-size: 1rem;
+            color: #718096;
+            margin-top: 0.2rem;
+            font-weight: 500;
+        }
+
+        /* List Items */
+        .list-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .list-item {
+            background-color: white;
+            padding: 1.2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .item-icon {
+            margin-top: 0.2rem;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .left-column .item-icon { color: #3182ce; }
+        .right-column .item-icon { color: #38b2ac; }
+
+        .item-content {
+            flex: 1;
+        }
+
+        .item-title {
+            font-weight: 700;
+            color: #2d3748;
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .item-desc {
+            color: #4a5568;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+        
+        /* Background Icons */
+        .bg-icon {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            font-size: 10rem;
+            opacity: 0.05;
+            pointer-events: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">데이터 기반 의사결정: 무엇이 필요할까?</h1>
+<p class="sub-title">성공적인 의사결정을 위해 반드시 갖춰야 할 두 가지 요소</p>
+</div>
+<div class="two-column-container">
+<div class="center-divider">
+<i class="fas fa-plus"></i>
+</div>
+<!-- Left Column: Data (Input) -->
+<div class="column-box left-column">
+<i class="fas fa-database bg-icon"></i>
+<div class="col-header">
+<div class="col-icon">
+<i class="fas fa-file-invoice-dollar"></i>
+</div>
+<div>
+<p class="col-title">참고할 데이터</p>
+<p class="col-subtitle">Input: 판단의 근거 자료</p>
+</div>
+</div>
+<div class="list-container">
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-table"></i></div>
+<div class="item-content">
+<p class="item-title">가공된 형태</p>
+<p class="item-desc">원천 데이터가 아닌 표, 그래프, 보고서 형태로 정리되어야 함</p>
+</div>
+</div>
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-search"></i></div>
+<div class="item-content">
+<p class="item-title">접근성 &amp; 품질</p>
+<p class="item-desc">필요할 때 바로 볼 수 있고, 내용이 정확하며 일관되어야 함</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Criteria (Output Evaluation) -->
+<div class="column-box right-column">
+<i class="fas fa-clipboard-check bg-icon"></i>
+<div class="col-header">
+<div class="col-icon">
+<i class="fas fa-ruler-combined"></i>
+</div>
+<div>
+<p class="col-title">판단 기준</p>
+<p class="col-subtitle">Standard: 결과 평가의 잣대</p>
+</div>
+</div>
+<div class="list-container">
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-tasks"></i></div>
+<div class="item-content">
+<p class="item-title">성공/실패 정의</p>
+<p class="item-desc">의사결정의 결과가 좋았는지 나빴는지 판가름할 기준(성공, 실패, 점수)</p>
+</div>
+</div>
+<div class="list-item">
+<div class="item-icon"><i class="fas fa-bullseye"></i></div>
+<div class="item-content">
+<p class="item-title">사전 합의</p>
+<p class="item-desc">결과가 나온 뒤에 정하는 것이 아니라, 사전에 정의되고 공유되어야 함</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>데이터 기반 의사결정을 하려면 딱 두 가지가 필요합니다.</li>
+<li>첫째는 당연히 '데이터'입니다. 하지만 그냥 쌓여있는 데이터가 아니라, 의사결정자가 읽을 수 있는 표나 보고서 형태여야 합니다.</li>
+<li>둘째는 의외로 간과하기 쉬운 '판단 기준'입니다.</li>
+<li>우리가 어떤 결정을 내리고 나서, 그 결정이 잘한 결정인지 못한 결정인지 어떻게 알 수 있을까요?</li>
+<li>명확한 기준(성공/실패, 목표 달성률 등)이 없으면 데이터가 아무리 많아도 피드백을 얻을 수 없습니다.</li>
+<li>즉, '좋은 재료(데이터)'와 '정확한 레시피(기준)'가 있어야 요리(의사결정)가 성공합니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 일하는 방식의 문제: 인식</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .title-area::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #38b2ac; /* Mint */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #38b2ac; /* Mint accent */
+            transition: transform 0.2s;
+        }
+        .bullet-item:hover {
+            transform: translateX(5px);
+            background-color: #f7fafc;
+        }
+        .bullet-icon {
+            color: #38b2ac;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.25rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .bullet-content {
+            flex: 1;
+        }
+        .bullet-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        .bullet-desc {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #c53030; /* Red for negative/warning */
+            font-weight: 700;
+            background-color: #fff5f5;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .side-visual {
+            position: absolute;
+            right: 5rem;
+            top: 55%;
+            transform: translateY(-50%);
+            width: 400px;
+            height: 400px;
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #cbd5e0;
+            z-index: 0;
+        }
+        .main-content {
+            width: 60%;
+            z-index: 1;
+        }
+        /* Visual elements for the side panel */
+        .problem-visual-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            width: 320px;
+        }
+        .problem-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            border: 1px solid #e2e8f0;
+        }
+        .problem-icon {
+            font-size: 2rem;
+            color: #e53e3e; /* Red for problems */
+            margin-bottom: 0.5rem;
+        }
+        .problem-label {
+            font-size: 0.95rem;
+            color: #4a5568;
+            font-weight: 600;
+        }
+        .arrow-down {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #cbd5e0;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<p class="sub-title">Chapter 3. 고용노동부의 데이터</p>
+<h1 class="main-title">일하는 방식의 문제: 인식</h1>
+</div>
+<div class="flex h-full relative">
+<!-- Main Bullet Content -->
+<div class="main-content bullet-list">
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-hard-hat"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">현장 중심의 조직문화</p>
+<p class="bullet-desc">
+                                오랜 기간 현장 해결 중심으로 업무가 정착되었습니다.<br/>
+                                당장의 문제 해결이 급하다 보니 <span class="highlight-text">데이터 기록과 관리의 중요성</span>을 상대적으로 낮게 인식합니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-eye-slash"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">"문제 없으면 그만" 관행</p>
+<p class="bullet-desc">
+                                현장에서 당장 민원이 없거나 사고가 터지지 않으면,<br/>
+                                데이터 관리가 다소 부실하더라도 <span class="highlight-text">문제 삼지 않는 분위기</span>가 존재합니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-file-excel"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">시스템 대신 수기 취합</p>
+<p class="bullet-desc">
+                                국회나 언론 대응 시, 내부 통계 시스템을 신뢰하거나 활용하기보다<br/>
+                                그때그때 <span class="text-red-600 font-bold bg-red-50 px-1 rounded">공문이나 메일로 엑셀 파일을 취합</span>하는 방식을 당연하게 여깁니다.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Side Visual -->
+<div class="side-visual">
+<div class="problem-visual-container">
+<div class="problem-card">
+<i class="fas fa-running problem-icon"></i>
+<p class="problem-label">현장 우선주의<br/><span class="text-xs text-gray-500 font-normal">데이터 후순위</span></p>
+</div>
+<div class="problem-card">
+<i class="fas fa-history problem-icon"></i>
+<p class="problem-label">낡은 관행<br/><span class="text-xs text-gray-500 font-normal">경험 의존적</span></p>
+</div>
+<div class="problem-card">
+<i class="fas fa-paper-plane problem-icon"></i>
+<p class="problem-label">일회성 보고<br/><span class="text-xs text-gray-500 font-normal">휘발되는 정보</span></p>
+</div>
+<div class="problem-card">
+<i class="fas fa-server problem-icon" style="color: #cbd5e0;"></i>
+<div class="absolute text-red-500 text-3xl font-bold" style="top: 25%; right: 25%;"><i class="fas fa-ban"></i></div>
+<p class="problem-label">시스템 미활용<br/><span class="text-xs text-gray-500 font-normal">신뢰도 저하</span></p>
+</div>
+</div>
+<div class="absolute -bottom-10 text-center w-full">
+<p class="text-gray-500 text-sm font-medium">데이터 기반 행정의 걸림돌</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>고용노동부의 데이터 문제는 단순히 시스템 문제가 아닙니다. 일하는 방식, 더 깊게는 '인식'의 문제입니다.</li>
+<li>첫째, 현장 중심의 조직문화가 강합니다. 당장의 민원 해결과 현장 단속이 최우선이다 보니, 그 과정을 꼼꼼하게 데이터로 남기는 일은 '부수적인 행정 업무'로 치부되곤 합니다.</li>
+<li>둘째, 당장 사고가 나지 않으면 데이터 부실을 문제 삼지 않습니다. 데이터 품질이 나빠도 당장 업무가 돌아가면 넘어가는 것이죠.</li>
+<li>셋째, 가장 큰 문제는 '수기 취합' 관행입니다. 급한 국회 요구자료가 오면 시스템을 열어보는 게 아니라, 전국의 지청에 "엑셀로 언제까지 보내라"고 공문을 보냅니다.</li>
+<li>이러한 방식은 데이터가 시스템에 축적되는 것을 막고, 담당자의 피로도만 높이는 악순환을 만듭니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

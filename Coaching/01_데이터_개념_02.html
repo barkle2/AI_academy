@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 학습목표</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-accent-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 24px;
+            background-color: #1a365d; /* Navy */
+            z-index: 10;
+        }
+        .header-area {
+            padding: 3rem 4rem 1rem 5rem;
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .main-title {
+            color: #1a365d;
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        .sub-text {
+            color: #718096;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .content-area {
+            flex: 1;
+            padding: 0 4rem 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .agenda-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            width: 100%;
+            height: 100%;
+        }
+        .agenda-item {
+            background-color: #fff;
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            align-items: flex-start;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+        .agenda-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background-color: #38b2ac; /* Mint */
+            transition: width 0.3s;
+        }
+        .agenda-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .agenda-item:hover::before {
+            width: 12px;
+        }
+        .icon-circle {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: #ebf8ff;
+            color: #2c5282;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+        .text-content {
+            flex: 1;
+        }
+        .item-title {
+            color: #2d3748;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+        .item-desc {
+            color: #718096;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        .number-watermark {
+            position: absolute;
+            right: 1rem;
+            bottom: -1rem;
+            font-size: 6rem;
+            font-weight: 900;
+            color: #f7fafc;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Side Accent Bar -->
+<div class="bg-accent-bar"></div>
+<!-- Header -->
+<header class="header-area">
+<div>
+<p class="text-mint-600 font-bold uppercase tracking-wider mb-1" style="color: #38b2ac;">Agenda</p>
+<h1 class="main-title">오늘의 학습목표</h1>
+</div>
+<div class="sub-text">
+<p>제1강 데이터 | 개념과 의사결정</p>
+</div>
+</header>
+<!-- Content -->
+<div class="content-area">
+<div class="agenda-list">
+<!-- Item 1 -->
+<div class="agenda-item">
+<div class="icon-circle">
+<i class="fas fa-layer-group"></i>
+</div>
+<div class="text-content" style="z-index: 1;">
+<p class="item-title">데이터의 의미와 위치</p>
+<p class="item-desc">데이터의 어원과 정의를 이해하고<br/>DIKW 피라미드 내 위치를 파악합니다.</p>
+</div>
+<div class="number-watermark">01</div>
+</div>
+<!-- Item 2 -->
+<div class="agenda-item">
+<div class="icon-circle">
+<i class="fas fa-filter"></i>
+</div>
+<div class="text-content" style="z-index: 1;">
+<p class="item-title">'쓸모있는 데이터'의 조건</p>
+<p class="item-desc">모든 데이터가 가치있는 것은 아닙니다.<br/>의사결정에 유용한 데이터의 특징을 알아봅니다.</p>
+</div>
+<div class="number-watermark">02</div>
+</div>
+<!-- Item 3 -->
+<div class="agenda-item">
+<div class="icon-circle">
+<i class="fas fa-chart-line"></i>
+</div>
+<div class="text-content" style="z-index: 1;">
+<p class="item-title">데이터 기반 의사결정</p>
+<p class="item-desc">직관이 아닌 데이터에 기반한 의사결정의<br/>필요성과 핵심 요소를 정리합니다.</p>
+</div>
+<div class="number-watermark">03</div>
+</div>
+<!-- Item 4 -->
+<div class="agenda-item">
+<div class="icon-circle">
+<i class="fas fa-landmark"></i>
+</div>
+<div class="text-content" style="z-index: 1;">
+<p class="item-title">고용노동부 데이터 사례</p>
+<p class="item-desc">우리 조직의 데이터 현황과 문제점을 통해<br/>현실적인 개선 과제를 인식합니다.</p>
+</div>
+<div class="number-watermark">04</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>오늘 강의의 학습목표는 크게 4가지입니다.</li>
+<li>첫째, 데이터의 기본적인 의미와 지식 체계에서의 위치를 DIKW 모델을 통해 이해합니다.</li>
+<li>둘째, 수많은 데이터 중에서 진짜 '쓸모있는 데이터'가 무엇인지 그 조건을 명확히 합니다.</li>
+<li>셋째, 데이터를 활용해 더 나은 결정을 내리는 '데이터 기반 의사결정'의 중요성을 배웁니다.</li>
+<li>마지막으로, 고용노동부의 실제 데이터 현황과 우리가 해결해야 할 과제들을 살펴보겠습니다.</li>
+<li>이 4가지 목표를 달성하면, 여러분은 데이터에 대한 새로운 시각을 갖게 될 것입니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

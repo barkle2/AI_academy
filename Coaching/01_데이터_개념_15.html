@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 고용노동부 데이터: 질 관리 이슈</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .title-area::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #38b2ac; /* Mint */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .flex-container {
+            display: flex;
+            height: 100%;
+            position: relative;
+        }
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 60%;
+            z-index: 1;
+        }
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #38b2ac; /* Mint accent */
+            transition: transform 0.2s;
+        }
+        .bullet-item:hover {
+            transform: translateX(5px);
+            background-color: #f7fafc;
+        }
+        .bullet-icon {
+            color: #38b2ac;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.25rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .bullet-content {
+            flex: 1;
+        }
+        .bullet-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        .bullet-desc {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #c53030; /* Red for issues */
+            font-weight: 700;
+            background-color: #fff5f5;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .side-visual {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 420px;
+            height: 400px;
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #cbd5e0;
+            z-index: 0;
+            padding: 2rem;
+        }
+        .issue-card {
+            width: 100%;
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            border-left: 4px solid #fc8181; /* Light red */
+        }
+        .issue-icon {
+            font-size: 1.5rem;
+            color: #e53e3e;
+            margin-right: 1rem;
+            width: 40px;
+            text-align: center;
+        }
+        .issue-text {
+            font-size: 1rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        .stat-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 8px solid #fed7d7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #e53e3e;
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 0.8rem;
+            color: #718096;
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<p class="sub-title">Chapter 3. 고용노동부의 데이터</p>
+<h1 class="main-title">고용노동부 데이터: 질 관리 이슈</h1>
+</div>
+<div class="flex-container">
+<!-- Main Bullet Content -->
+<div class="bullet-list">
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-project-diagram"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">목적별 분산 관리</p>
+<p class="bullet-desc">
+                                데이터가 목적에 따라 흩어져 있어<br/>
+<span class="highlight-text">통합적이고 체계적인 관리</span>가 이뤄지지 못하고 있습니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-unlink"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">메타데이터 부실</p>
+<p class="bullet-desc">
+                                데이터 정의서 등 메타데이터 관리가 미흡하여<br/>
+                                여러 데이터를 <span class="highlight-text">연계하려고 해도 불가능</span>하거나 큰 노력이 필요합니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-users-slash"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">인력 및 조직 부족</p>
+<p class="bullet-desc">
+                                전체 인력 규모에 비해 데이터 관리 인력은 턱없이 부족합니다.<br/>
+                                전담 인력이 <span class="highlight-text">전체의 1% 미만</span>에 불과한 실정입니다.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Side Visual -->
+<div class="side-visual">
+<div class="issue-card">
+<div class="issue-icon"><i class="fas fa-exclamation-triangle"></i></div>
+<div class="issue-text">통합 관리 부재</div>
+</div>
+<div class="issue-card">
+<div class="issue-icon"><i class="fas fa-link"></i></div>
+<div class="issue-text">데이터 연계 어려움</div>
+</div>
+<div class="stat-circle">
+<span class="stat-number">&lt; 1%</span>
+<span class="stat-label">데이터 전담 인력</span>
+</div>
+<div class="text-center mt-4">
+<p class="text-gray-500 text-sm font-medium">데이터 관리의 현실적 한계</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>고용노동부 데이터의 양은 방대하지만, 질적인 측면에서는 아쉬운 점이 많습니다. 크게 세 가지 이슈가 있습니다.</li>
+<li>첫째, 데이터가 통합되지 못하고 목적별로 분산되어 있습니다. 이로 인해 전체적인 현황 파악이나 체계적인 관리가 어렵습니다.</li>
+<li>둘째, 메타데이터, 즉 데이터에 대한 설명이 부실합니다. 이는 부서 간 데이터 연계를 불가능하게 만들거나 불필요한 행정 비용을 발생시킵니다.</li>
+<li>셋째, 가장 심각한 문제는 인력 부족입니다. 데이터 관리 전담 인력이 전체의 1%도 되지 않아, 현업에서 데이터를 제대로 관리할 여력이 없는 상황입니다.</li>
+<li>이러한 질적 문제는 데이터 기반 행정으로 나아가는 데 큰 걸림돌이 되고 있습니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

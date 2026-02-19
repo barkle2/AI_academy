@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 고용노동부 데이터 양(범위)</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 2.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.2rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1.5rem;
+            flex: 1;
+            padding: 0 1rem 1rem 1rem;
+        }
+
+        /* Grid Item */
+        .grid-item {
+            background-color: #f7fafc;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            background-color: #ebf8ff;
+            border-color: #bee3f8;
+        }
+
+        /* Icon Circle */
+        .icon-wrapper {
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            color: #3182ce;
+            font-size: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        .grid-item:hover .icon-wrapper {
+            color: #38b2ac; /* Mint on hover */
+        }
+
+        /* Text Content */
+        .item-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            color: #718096;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        /* Background Pattern for Items */
+        .bg-pattern {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            opacity: 0.1;
+            z-index: 0;
+            color: #cbd5e0;
+        }
+
+        /* Specific Colors for variety (Optional) */
+        .item-1 .icon-wrapper { color: #e53e3e; }
+        .item-2 .icon-wrapper { color: #dd6b20; }
+        .item-3 .icon-wrapper { color: #38b2ac; }
+        .item-4 .icon-wrapper { color: #3182ce; }
+        .item-5 .icon-wrapper { color: #805ad5; }
+        .item-6 .icon-wrapper { color: #d69e2e; }
+        .item-7 .icon-wrapper { color: #00b5d8; }
+        .item-8 .icon-wrapper { color: #718096; }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">고용노동부 데이터: 양(Volume)</h1>
+<p class="sub-title">국민의 삶 전반에 걸친 방대하고 다양한 데이터 보유</p>
+</div>
+<div class="grid-container">
+<!-- Item 1 -->
+<div class="grid-item item-1">
+<div class="icon-wrapper">
+<i class="fas fa-gavel"></i>
+</div>
+<p class="item-title">노동법 위반</p>
+<p class="item-desc">임금체불, 부당해고 등<br/>신고 및 처리 내역</p>
+<i class="fas fa-gavel bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 2 -->
+<div class="grid-item item-2">
+<div class="icon-wrapper">
+<i class="fas fa-hard-hat"></i>
+</div>
+<p class="item-title">산업재해/보상</p>
+<p class="item-desc">사고 발생 현황,<br/>산재 승인 및 보상 데이터</p>
+<i class="fas fa-hard-hat bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 3 -->
+<div class="grid-item item-3">
+<div class="icon-wrapper">
+<i class="fas fa-users"></i>
+</div>
+<p class="item-title">노동조합</p>
+<p class="item-desc">설립 신고, 조합원 수,<br/>단체협약 현황</p>
+<i class="fas fa-users bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 4 -->
+<div class="grid-item item-4">
+<div class="icon-wrapper">
+<i class="fas fa-user-clock"></i>
+</div>
+<p class="item-title">비정규직</p>
+<p class="item-desc">고용 형태별 근로조건,<br/>차별 시정 내역</p>
+<i class="fas fa-user-clock bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 5 -->
+<div class="grid-item item-5">
+<div class="icon-wrapper">
+<i class="fas fa-globe-asia"></i>
+</div>
+<p class="item-title">외국인 노동자</p>
+<p class="item-desc">고용허가제(E-9) 현황,<br/>사업장 배정 정보</p>
+<i class="fas fa-globe-asia bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 6 -->
+<div class="grid-item item-6">
+<div class="icon-wrapper">
+<i class="fas fa-coins"></i>
+</div>
+<p class="item-title">임금·근로시간</p>
+<p class="item-desc">퇴직연금 가입,<br/>주52시간제 준수 여부</p>
+<i class="fas fa-coins bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 7 -->
+<div class="grid-item item-7">
+<div class="icon-wrapper">
+<i class="fas fa-shield-alt"></i>
+</div>
+<p class="item-title">고용·산재보험</p>
+<p class="item-desc">피보험자 자격 취득/상실,<br/>보험료 부과 내역</p>
+<i class="fas fa-shield-alt bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+<!-- Item 8 -->
+<div class="grid-item item-8">
+<div class="icon-wrapper">
+<i class="fas fa-chart-bar"></i>
+</div>
+<p class="item-title">노동시장 통계</p>
+<p class="item-desc">사업체 노동력 조사,<br/>지역별 고용 동향</p>
+<i class="fas fa-chart-bar bg-pattern" style="font-size: 4rem; top: -10px; right: -10px;"></i>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>고용노동부는 다른 어떤 부처보다도 방대한 데이터를 가지고 있습니다.</li>
+<li>국민 한 사람 한 사람의 일자리와 관련된 거의 모든 정보가 모이는 곳입니다.</li>
+<li>근로계약부터 시작해서 임금, 근로시간, 퇴직연금까지 생애주기 전반의 데이터가 있습니다.</li>
+<li>또한 산업안전, 외국인 고용, 노사 관계 등 전문적인 영역의 데이터도 보유하고 있습니다.</li>
+<li>고용보험과 산재보험 데이터는 전국민을 대상으로 하는 거대한 사회안전망 데이터베이스입니다.</li>
+<li>이렇게 '양'적으로는 부족함이 없어 보입니다. 그렇다면 '질'은 어떨까요?</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

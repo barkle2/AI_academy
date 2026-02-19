@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 데이터의 의미</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .title-area::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #38b2ac; /* Mint */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #38b2ac; /* Mint accent */
+            transition: transform 0.2s;
+        }
+        .bullet-item:hover {
+            transform: translateX(5px);
+            background-color: #f7fafc;
+        }
+        .bullet-icon {
+            color: #38b2ac;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.25rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .bullet-content {
+            flex: 1;
+        }
+        .bullet-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        .bullet-desc {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #2c5282;
+            font-weight: 700;
+            background-color: #ebf8ff;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .side-visual {
+            position: absolute;
+            right: 5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 400px;
+            height: 400px;
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #cbd5e0;
+            z-index: 0;
+        }
+        .main-content {
+            width: 60%;
+            z-index: 1;
+        }
+        .latin-origin {
+            font-family: 'Noto Serif KR', serif;
+            font-style: italic;
+            color: #718096;
+        }
+        /* Visual elements for the side panel */
+        .data-visual-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            width: 320px;
+        }
+        .data-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
+        .data-icon {
+            font-size: 2rem;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+        .data-label {
+            font-size: 0.9rem;
+            color: #718096;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<p class="sub-title">Chapter 1. 데이터의 개념</p>
+<h1 class="main-title">데이터의 의미(Definition)</h1>
+</div>
+<div class="flex h-full relative">
+<!-- Main Bullet Content -->
+<div class="main-content bullet-list">
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-language"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">어원: 주어진 것(Given)</p>
+<p class="bullet-desc">
+                                라틴어 <span class="latin-origin">'Datum'</span>(주어진 것)의 복수형에서 유래했습니다.<br/>
+                                이미 존재하며 우리에게 주어진 사실들을 의미합니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-database"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">정의: 가공되지 않은 자료</p>
+<p class="bullet-desc">
+                                현실 세계에서 발생한 현상을 <span class="highlight-text">있는 그대로 기록한</span> 것입니다.<br/>
+                                아직 분석이나 해석이 더해지지 않은 원천 소스(Raw Material)입니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-shapes"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">형태: 모든 기록된 것</p>
+<p class="bullet-desc">
+                                숫자, 문자뿐만 아니라 소리, 이미지, 영상 등<br/>
+<span class="highlight-text">기록되었다면 무엇이든</span> 데이터가 될 수 있습니다.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Side Visual -->
+<div class="side-visual">
+<div class="data-visual-container">
+<div class="data-card">
+<i class="fas fa-font data-icon text-blue-500"></i>
+<p class="data-label">문자(Text)</p>
+</div>
+<div class="data-card">
+<i class="fas fa-sort-numeric-up data-icon text-green-500"></i>
+<p class="data-label">숫자(Number)</p>
+</div>
+<div class="data-card">
+<i class="fas fa-image data-icon text-purple-500"></i>
+<p class="data-label">이미지(Image)</p>
+</div>
+<div class="data-card">
+<i class="fas fa-wave-square data-icon text-red-500"></i>
+<p class="data-label">소리(Sound)</p>
+</div>
+</div>
+<div class="absolute -bottom-8 text-center w-full">
+<p class="text-gray-500 text-sm font-medium">현실의 다양한 기록 형태</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>데이터라는 말은 너무 흔하게 쓰이지만, 정작 그 뜻을 물어보면 대답하기 어려울 때가 있습니다.</li>
+<li>어원부터 살펴보면, 라틴어 'Datum'(주어진 것)의 복수형입니다. 즉, 우리가 만들었다기보다 세상에 이미 주어져 있는 사실들을 말합니다.</li>
+<li>보통은 '현실 세계의 현상을 기록한 가공되지 않은 자료'라고 정의합니다.</li>
+<li>여기서 중요한 건 '가공되지 않았다'는 점입니다. 아직 요리되지 않은 식재료와 같죠.</li>
+<li>형태는 다양합니다. 엑셀의 숫자뿐만 아니라, 보고서의 글자, 현장 사진, 녹음 파일 등 기록된 모든 것이 데이터입니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 쓸모있는 데이터 3가지 특징</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 4rem;
+            display: flex;
+            flex-direction: column;
+            background-color: #f7fafc; /* Very Light Gray Background */
+        }
+        .title-area {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.25rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        
+        /* Card Container */
+        .cards-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            height: 400px;
+            padding: 0 1rem;
+        }
+        
+        /* Card Styles */
+        .feature-card {
+            flex: 1;
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 6px solid transparent;
+            position: relative;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        /* Card Variants */
+        .card-1 { border-top-color: #e53e3e; } /* Red for Accuracy */
+        .card-2 { border-top-color: #38b2ac; } /* Mint for Usefulness */
+        .card-3 { border-top-color: #3182ce; } /* Blue for Ease of Use */
+        
+        /* Icon Styles */
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        
+        .icon-1 { background-color: #fff5f5; color: #e53e3e; }
+        .icon-2 { background-color: #e6fffa; color: #38b2ac; }
+        .icon-3 { background-color: #ebf8ff; color: #3182ce; }
+        
+        /* Text Styles */
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        
+        .card-desc {
+            font-size: 1.1rem;
+            color: #718096;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex: 1;
+        }
+        
+        .card-keywords {
+            width: 100%;
+            background-color: #f7fafc;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            color: #4a5568;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 1px dashed #cbd5e0;
+        }
+
+        /* Number Badge */
+        .number-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
+            background-color: #2d3748;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">쓸모있는 데이터: 3가지 특징</h1>
+<p class="sub-title">어떤 데이터가 우리의 삶과 업무에 긍정적인 영향을 미칠까요?</p>
+</div>
+<div class="cards-container">
+<!-- Card 1 -->
+<div class="feature-card card-1">
+<div class="number-badge">1</div>
+<div class="icon-circle icon-1">
+<i class="fas fa-bullseye"></i>
+</div>
+<p class="card-title">현실 왜곡 없음</p>
+<p class="card-desc">
+                        현실 세계의 현상을 있는 그대로 정확하게 반영해야 합니다.<br/>
+                        거짓되거나 편향된 데이터는 잘못된 판단을 유발합니다.
+                    </p>
+<div class="card-keywords">
+<p>#정확성 #대표성 #시의성</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="feature-card card-2">
+<div class="number-badge">2</div>
+<div class="icon-circle icon-2">
+<i class="fas fa-balance-scale"></i>
+</div>
+<p class="card-title">의사결정 활용 가능</p>
+<p class="card-desc">
+                        데이터를 통해 더 나은 선택을 할 수 있어야 합니다.<br/>
+                        목적과 관련 없는 데이터는 정보 과부하만 일으킵니다.
+                    </p>
+<div class="card-keywords">
+<p>#목적적합성 #KPI연계 #유의미</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="feature-card card-3">
+<div class="number-badge">3</div>
+<div class="icon-circle icon-3">
+<i class="fas fa-users-cog"></i>
+</div>
+<p class="card-title">사용 난이도 적정</p>
+<p class="card-desc">
+                        누구나 쉽게 접근하고 이해할 수 있어야 합니다.<br/>
+                        사용하기 너무 어렵거나 복잡하면 쓸모가 없습니다.
+                    </p>
+<div class="card-keywords">
+<p>#접근성 #표준화 #이해용이</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>데이터가 많다고 무조건 좋은 것은 아닙니다. '쓰레기를 넣으면 쓰레기가 나온다(GIGO)'는 말처럼, 품질이 중요합니다.</li>
+<li>제가 생각하는 쓸모있는 데이터의 3가지 조건입니다.</li>
+<li>첫째, 현실을 왜곡하지 않아야 합니다. 정확하고 시의적절해야 현실을 제대로 파악할 수 있죠.</li>
+<li>둘째, 의사결정에 활용할 수 있어야 합니다. 아무리 정확해도 내 업무와 관련이 없거나 판단 기준이 되지 못하면 무용지물입니다.</li>
+<li>셋째, 사용하기 쉬워야 합니다. 전문가만 해독할 수 있는 데이터보다는, 실무자가 쉽게 열어보고 이해할 수 있는 데이터가 진짜 힘을 발휘합니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

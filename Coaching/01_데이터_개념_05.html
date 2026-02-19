@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 참여활동 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .activity-badge {
+            background-color: #38b2ac; /* Mint */
+            color: white;
+            font-weight: 700;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            margin-right: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(56, 178, 172, 0.4);
+        }
+        .main-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a365d;
+        }
+        
+        /* Activity Content Layout */
+        .activity-container {
+            display: flex;
+            flex: 1;
+            gap: 3rem;
+        }
+        
+        /* Left: Question Area */
+        .question-box {
+            flex: 1;
+            background-color: #ebf8ff; /* Light Blue */
+            border-radius: 1rem;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            border-left: 8px solid #3182ce;
+        }
+        
+        .question-icon {
+            font-size: 3rem;
+            color: #3182ce;
+            margin-bottom: 1.5rem;
+        }
+        
+        .question-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c5282;
+            line-height: 1.4;
+            margin-bottom: 1.5rem;
+        }
+        
+        .question-sub {
+            font-size: 1.2rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        /* Right: Memo Area */
+        .memo-box {
+            flex: 1.2;
+            background-color: #fff;
+            border: 2px dashed #cbd5e0;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            position: relative;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        
+        .memo-label {
+            position: absolute;
+            top: -15px;
+            left: 30px;
+            background-color: #fff;
+            padding: 0 10px;
+            color: #718096;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        
+        .memo-lines {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-top: 1rem;
+        }
+        
+        .memo-line {
+            border-bottom: 2px solid #e2e8f0;
+            height: 40px;
+            width: 100%;
+        }
+        
+        .handwriting-hint {
+            font-family: 'Nanum Pen Script', cursive;
+            color: #a0aec0;
+            font-size: 1.8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-5deg);
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        /* Time & Instruction */
+        .instruction-bar {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f7fafc;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .timer-info {
+            display: flex;
+            align-items: center;
+            color: #e53e3e; /* Red for timer */
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .action-info {
+            color: #4a5568;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<span class="activity-badge">Activity 01</span>
+<h1 class="main-title">내가 만든 데이터는?</h1>
+</div>
+<div class="activity-container">
+<!-- Left: Question -->
+<div class="question-box">
+<div class="question-icon">
+<i class="fas fa-pen-fancy"></i>
+</div>
+<p class="question-text">오늘 하루, 당신이 '기록'한 것은 무엇인가요?</p>
+<div class="question-sub">
+<p><i class="fas fa-check-circle text-blue-500 mr-2"></i>보낸 카카오톡 메시지</p>
+<p><i class="fas fa-check-circle text-blue-500 mr-2"></i>결재 올린 문서</p>
+<p><i class="fas fa-check-circle text-blue-500 mr-2"></i>회의 중 작성한 메모</p>
+<p><i class="fas fa-check-circle text-blue-500 mr-2"></i>점심 식사 결제 영수증</p>
+</div>
+</div>
+<!-- Right: Memo -->
+<div class="memo-box">
+<span class="memo-label"><i class="fas fa-pencil-alt mr-2"></i>나의 데이터 기록하기</span>
+<div class="handwriting-hint">여기에 적어보세요!</div>
+<div class="memo-lines">
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+<div class="memo-line"></div>
+</div>
+</div>
+</div>
+<div class="instruction-bar">
+<div class="timer-info">
+<i class="fas fa-stopwatch mr-2"></i> 소요시간: 2분
+            </div>
+<div class="action-info">
+<i class="fas fa-comment-dots mr-2"></i> 1~2가지를 적고 옆 사람과 짧게 공유해주세요.
+            </div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>잠시 워밍업을 해보겠습니다. '데이터'라고 하면 뭔가 거창한 엑셀 파일이나 통계 수치를 떠올리기 쉽습니다.</li>
+<li>하지만 앞서 말씀드린 대로 기록된 모든 것은 데이터입니다.</li>
+<li>오늘 아침부터 지금까지, 여러분이 남긴 흔적을 생각해보세요.</li>
+<li>출근길에 찍은 교통카드 기록, 동료에게 보낸 메신저, 점심 메뉴를 고르기 위해 검색한 기록... 이 모든 것이 데이터입니다.</li>
+<li>1분 정도 시간을 드릴 테니, 사소한 것이라도 좋으니 1~2가지씩 적어보시고 옆 분과 이야기 나눠보세요.</li>
+<li>(활동 후) 네, 좋습니다. 우리가 의식하지 못하는 사이 우리는 수많은 데이터를 생산하고 있다는 사실을 알 수 있죠?</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

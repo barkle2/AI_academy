@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 데이터 기반 의사결정 프로세스</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 2.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.2rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        /* Timeline Container */
+        .timeline-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 0 1rem;
+        }
+
+        /* Connecting Line */
+        .timeline-line {
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            right: 5%;
+            height: 4px;
+            background-color: #e2e8f0;
+            z-index: 1;
+        }
+        
+        .timeline-line-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 80%; /* Progress simulation */
+            background-color: #3182ce;
+            border-radius: 2px;
+        }
+
+        /* Steps */
+        .steps-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .step-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 140px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .step-item:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Step Circle/Icon */
+        .step-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: white;
+            border: 4px solid #cbd5e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #718096;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .step-number {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 26px;
+            height: 26px;
+            background-color: #4a5568;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border: 2px solid white;
+        }
+
+        /* Active/Completed Styles */
+        .step-active .step-circle {
+            border-color: #3182ce;
+            color: #3182ce;
+            background-color: #ebf8ff;
+        }
+        
+        .step-active .step-number {
+            background-color: #3182ce;
+        }
+
+        .step-final .step-circle {
+            border-color: #38b2ac;
+            color: #38b2ac;
+            background-color: #e6fffa;
+        }
+        
+        .step-final .step-number {
+            background-color: #38b2ac;
+        }
+
+        /* Text Content */
+        .step-content {
+            text-align: center;
+        }
+
+        .step-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            height: 3rem; /* Fixed height for alignment */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+        }
+
+        .step-desc {
+            font-size: 0.85rem;
+            color: #718096;
+            line-height: 1.4;
+            background-color: #f7fafc;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            border: 1px dashed #cbd5e0;
+            width: 100%;
+        }
+
+        /* Iteration Loop Arrow (SVG) */
+        .loop-arrow {
+            position: absolute;
+            top: -30px;
+            right: 80px;
+            width: 100px;
+            height: 40px;
+            z-index: 0;
+            opacity: 0.2;
+        }
+
+        /* Bottom Message */
+        .bottom-message {
+            margin-top: 1rem;
+            background-color: #edf2f7;
+            padding: 1rem 2rem;
+            border-radius: 3rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .message-icon {
+            color: #3182ce;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .message-text {
+            color: #4a5568;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<h1 class="main-title">데이터 기반 의사결정 프로세스</h1>
+<p class="sub-title">데이터가 의사결정으로 이어지는 6단계 흐름</p>
+</div>
+<div class="timeline-container">
+<!-- Line -->
+<div class="timeline-line">
+<div class="timeline-line-fill"></div>
+</div>
+<!-- Steps -->
+<div class="steps-wrapper">
+<!-- Step 1 -->
+<div class="step-item step-active">
+<div class="step-circle">
+<span class="step-number">1</span>
+<i class="fas fa-question"></i>
+</div>
+<div class="step-content">
+<p class="step-title">문제 정의</p>
+<p class="step-desc">해결해야 할 문제와 목표를 명확히 설정</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="step-item step-active">
+<div class="step-circle">
+<span class="step-number">2</span>
+<i class="fas fa-search-plus"></i>
+</div>
+<div class="step-content">
+<p class="step-title">데이터 수집</p>
+<p class="step-desc">필요한 데이터를 내/외부에서 확보</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-item step-active">
+<div class="step-circle">
+<span class="step-number">3</span>
+<i class="fas fa-filter"></i>
+</div>
+<div class="step-content">
+<p class="step-title">가공 &amp; 시각화</p>
+<p class="step-desc">전처리 후 이해하기 쉬운 형태로 변환</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="step-item step-active">
+<div class="step-circle">
+<span class="step-number">4</span>
+<i class="fas fa-chart-line"></i>
+</div>
+<div class="step-content">
+<p class="step-title">분석 &amp; 인사이트</p>
+<p class="step-desc">패턴을 찾고 의미를 해석</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="step-item step-active">
+<div class="step-circle">
+<span class="step-number">5</span>
+<i class="fas fa-gavel"></i>
+</div>
+<div class="step-content">
+<p class="step-title">의사결정</p>
+<p class="step-desc">분석 결과를 토대로 최적의 대안 선택</p>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="step-item step-final">
+<div class="step-circle">
+<span class="step-number">6</span>
+<i class="fas fa-sync-alt"></i>
+</div>
+<div class="step-content">
+<p class="step-title">피드백 &amp; 평가</p>
+<p class="step-desc">결과를 측정하고 다음 과정에 반영</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bottom-message">
+<i class="fas fa-lightbulb message-icon"></i>
+<p class="message-text">핵심은 한 번으로 끝나는 것이 아니라, 피드백을 통해 <strong>'반복'</strong>하며 프로세스를 <strong>'표준화'</strong>하는 것입니다.</p>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>데이터 기반 의사결정은 단순히 데이터를 보는 것에서 끝나지 않습니다. 일련의 과정이 필요합니다.</li>
+<li>가장 중요한 첫 단계는 '문제 정의'입니다. 무엇을 해결할지 모르면 어떤 데이터를 모아야 할지도 모르게 됩니다.</li>
+<li>그 다음 데이터를 수집하고, 분석하기 좋게 가공합니다.</li>
+<li>분석을 통해 인사이트를 얻고, 이를 바탕으로 실제 의사결정을 내립니다.</li>
+<li>하지만 여기서 끝나면 안 됩니다. 마지막 6단계, '피드백'이 있어야 합니다.</li>
+<li>내 결정이 맞았는지 틀렸는지 확인하고, 그 결과를 다시 1단계로 가져가야 조직의 데이터 역량이 성장합니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

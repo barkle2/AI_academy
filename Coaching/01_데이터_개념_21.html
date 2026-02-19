@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 오늘의 핵심 정리</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-bar {
+            background-color: #1a365d; /* Navy */
+            height: 12px;
+            width: 100%;
+        }
+        .content-wrapper {
+            flex: 1;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .title-area {
+            margin-bottom: 2.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .title-area::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            background-color: #38b2ac; /* Mint */
+        }
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .sub-title {
+            font-size: 1.1rem;
+            color: #718096;
+            font-weight: 500;
+        }
+        .bullet-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            width: 100%;
+            padding-right: 2rem;
+        }
+        .bullet-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid #38b2ac; /* Mint accent */
+            transition: transform 0.2s;
+        }
+        .bullet-item:hover {
+            transform: translateX(5px);
+            background-color: #f7fafc;
+        }
+        .bullet-icon {
+            color: #38b2ac;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+            margin-top: 0.25rem;
+            min-width: 30px;
+            text-align: center;
+        }
+        .bullet-content {
+            flex: 1;
+        }
+        .bullet-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 0.4rem;
+        }
+        .bullet-desc {
+            font-size: 1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .highlight-text {
+            color: #2c5282;
+            font-weight: 700;
+            background-color: #ebf8ff;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        .side-visual {
+            position: absolute;
+            right: 5rem;
+            top: 55%;
+            transform: translateY(-50%);
+            width: 380px;
+            height: 380px;
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #cbd5e0;
+            z-index: 0;
+            padding: 1rem;
+        }
+        .main-content {
+            width: 60%;
+            z-index: 1;
+        }
+        .summary-icon {
+            font-size: 4rem;
+            color: #38b2ac;
+            margin-bottom: 1.5rem;
+        }
+        .summary-message {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2d3748;
+            text-align: center;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header-bar"></div>
+<div class="content-wrapper">
+<div class="title-area">
+<p class="sub-title">Wrap-up. 오늘의 핵심 정리</p>
+<h1 class="main-title">이번 시간에 배운 내용</h1>
+</div>
+<div class="flex h-full relative">
+<!-- Main Bullet Content -->
+<div class="main-content bullet-list">
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-layer-group"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">데이터는 출발점이다 (DIKW)</p>
+<p class="bullet-desc">
+                                데이터는 가장 기초적인 자료이며, 가공과 분석을 거쳐 정보, 지식, 지혜로 발전할 때 진정한 가치가 생깁니다. <span class="highlight-text">기록만으로는 부족합니다.</span>
+</p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-star"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">쓸모있는 데이터의 3가지 조건</p>
+<p class="bullet-desc">
+                                1) 현실을 왜곡하지 않아야 하고(정확성), 2) 의사결정에 활용할 수 있어야 하며(목적성), 3) 사용하기 쉬워야 합니다(접근성).
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-chart-line"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">데이터 기반 의사결정의 공식</p>
+<p class="bullet-desc">
+                                좋은 <span class="highlight-text">데이터</span>(입력)와 명확한 <span class="highlight-text">판단 기준</span>(평가), 그리고 이를 통한 반복적인 학습이 합리적인 결정을 만듭니다.
+                            </p>
+</div>
+</div>
+<div class="bullet-item">
+<div class="bullet-icon"><i class="fas fa-building"></i></div>
+<div class="bullet-content">
+<p class="bullet-title">고용노동부 데이터의 과제</p>
+<p class="bullet-desc">
+                                양적인 데이터(Volume)는 충분하지만, 질적 관리(Quality)와 프로세스 개선이 필요합니다. <span class="highlight-text">통합 관리와 표준화</span>가 시급합니다.
+                            </p>
+</div>
+</div>
+</div>
+<!-- Right Side Visual -->
+<div class="side-visual">
+<i class="fas fa-check-circle summary-icon"></i>
+<p class="summary-message">
+                    "데이터는 쌓아두는 것이 아니라<br/>
+                    쓰기 위해 관리하는 것입니다."
+                </p>
+<div class="mt-6 w-full px-6">
+<div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+<span>데이터</span>
+<span>의사결정</span>
+</div>
+<div class="w-full bg-gray-200 rounded-full h-2.5">
+<div class="bg-blue-600 h-2.5 rounded-full" style="width: 100%"></div>
+</div>
+<p class="text-center text-xs text-gray-400 mt-2">Data-Driven Decision Making</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>오늘 50분 동안 다룬 내용을 4가지로 요약해보겠습니다.</li>
+<li>첫째, 데이터는 그 자체로 목적이 아니라 출발점입니다. DIKW 피라미드의 가장 아래에 있죠. 가공되지 않으면 그저 숫자에 불과합니다.</li>
+<li>둘째, 좋은 데이터란 '정확하고, 목적에 맞고, 쓰기 쉬워야' 합니다. 이 3가지 중 하나라도 빠지면 쓸모없는 데이터가 됩니다.</li>
+<li>셋째, 데이터 기반 의사결정은 데이터와 기준이 만날 때 가능합니다. 그리고 반복을 통해 개선해 나가는 과정이 중요합니다.</li>
+<li>마지막으로 우리 부처의 현실을 봤을 때, 데이터의 양은 충분하지만 질적 관리와 일하는 방식의 개선이 필요하다는 점을 확인했습니다.</li>
+<li>결국 데이터는 쌓아두는 것이 아니라, 쓰기 위해 관리해야 한다는 점을 기억해주시기 바랍니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

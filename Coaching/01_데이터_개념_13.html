@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>제1강 데이터 - 현업 요약 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-accent-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 24px;
+            background-color: #1a365d; /* Navy */
+            z-index: 10;
+        }
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 8rem;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0f4f8' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        /* Summary Box Styling */
+        .summary-box {
+            position: relative;
+            background-color: #ebf8ff; /* Light Blue/Mint tint */
+            border: 2px solid #38b2ac; /* Mint */
+            border-radius: 1.5rem;
+            padding: 4rem 6rem;
+            max-width: 1000px;
+            text-align: center;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            z-index: 1;
+        }
+        
+        .quote-mark {
+            position: absolute;
+            font-family: serif;
+            font-size: 8rem;
+            color: #3182ce; /* Blue */
+            opacity: 0.3;
+            line-height: 1;
+        }
+        
+        .quote-left {
+            top: -2rem;
+            left: 2rem;
+        }
+        
+        .quote-right {
+            bottom: -5rem;
+            right: 2rem;
+        }
+        
+        .main-message {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a365d; /* Navy */
+            line-height: 1.4;
+            margin-bottom: 2rem;
+            word-break: keep-all;
+        }
+        
+        .highlight {
+            color: #2b6cb0;
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        
+        .highlight::after {
+            content: ''            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-color: #81e6d9; /* Mint highlight */
+            opacity: 0.5;
+            z-index: -1;
+            transform: skewX(-10deg);
+        }
+        
+        .sub-message {
+            font-size: 1.5rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+        
+        .handwritten-note {
+            position: absolute;
+            bottom: -60px;
+            right: 0;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 2rem;
+            color: #e53e3e;
+            transform: rotate(-5deg);
+            background-color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #fed7d7;
+        }
+        
+        .decoration-icon {
+            position: absolute;
+            font-size: 15rem;
+            color: #e2e8f0;
+            opacity: 0.4;
+            z-index: 0;
+            right: -5rem;
+            top: -5rem;
+            transform: rotate(15deg);
+        }
+
+        .check-point {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 10px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c5282;
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 2px solid #bee3f8;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .formula-plus {
+            font-size: 1.5rem;
+            color: #38b2ac;
+            font-weight: 900;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Accent Bar -->
+<div class="bg-accent-bar"></div>
+<!-- Content Area -->
+<div class="content-area">
+<!-- Background Decoration -->
+<i class="fas fa-chart-line decoration-icon"></i>
+<div class="summary-box">
+<div class="quote-mark quote-left">“</div>
+<p class="text-mint-600 font-bold uppercase tracking-wider mb-4" style="color: #38b2ac;">Key Takeaway</p>
+<p class="main-message">
+<span class="highlight">좋은 데이터</span>와 
+                    <span class="highlight">명확한 기준</span>,<br/>
+                    그리고 <span class="highlight">반복 학습</span>이<br/>
+                    의사결정을 강하게 만듭니다.
+                </p>
+<div class="mt-8 flex justify-center items-center flex-wrap gap-2">
+<div class="check-point">
+<i class="fas fa-database text-blue-500 mr-2"></i> 좋은 데이터
+                    </div>
+<div class="formula-plus">+</div>
+<div class="check-point">
+<i class="fas fa-ruler-combined text-indigo-500 mr-2"></i> 명확한 기준
+                    </div>
+<div class="formula-plus">+</div>
+<div class="check-point">
+<i class="fas fa-sync-alt text-green-500 mr-2"></i> 반복 학습
+                    </div>
+</div>
+<div class="quote-mark quote-right">”</div>
+<div class="handwritten-note">
+<p>실패해도 괜찮아요, 배우면 되니까요!</p>
+</div>
+</div>
+</div>
+<!-- Speaker Notes -->
+<div class="hidden">
+<h3>발표자 노트</h3>
+<ul>
+<li>데이터 기반 의사결정 섹션의 핵심 요약입니다.</li>
+<li>결국 3가지 박자가 맞아야 합니다. 믿을 수 있는 '좋은 데이터', 성공과 실패를 가르는 '명확한 기준', 그리고 결과를 보고 다시 시도하는 '반복 학습'입니다.</li>
+<li>데이터만 있다고 해결되지 않습니다. 기준이 없으면 해석이 불가능하고, 반복하지 않으면 개선되지 않습니다.</li>
+<li>특히 '반복 학습'이 중요합니다. 한 번의 실패가 끝이 아니라, 다음 의사결정을 위한 데이터가 된다는 점을 잊지 마세요.</li>
+<li>우리 팀의 의사결정에는 이 3가지 요소 중 무엇이 부족한지 한 번 점검해보시기 바랍니다.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
